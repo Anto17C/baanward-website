@@ -1358,3 +1358,31 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
   .hero picture { right:auto; width:calc(100% - 2 * var(--hero-gutter)); }
   .page-hero-media { top:16px; bottom:16px; }
 }
+
+/* Contact details and shared floating actions. */
+.contact-details { margin-bottom:36px; }
+.contact-details h2 { font-size:1.65rem; }
+.contact-details p { margin-bottom:12px; }
+.contact-details .text-link { display:table; margin-bottom:14px; }
+.footer-grid>div>a.footer-email { display:inline-block; margin-top:14px; }
+.sticky-whatsapp,.back-to-top {
+  position:fixed;
+  right:24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  box-shadow:0 5px 18px #263d302b;
+  z-index:30;
+}
+.sticky-whatsapp { bottom:calc(88px + env(safe-area-inset-bottom, 0px)); width:56px; height:56px; background:#167b42; color:#fff; }
+.sticky-whatsapp svg { width:40px; height:40px; }
+.sticky-whatsapp:hover { background:#116536; }
+.back-to-top { bottom:calc(24px + env(safe-area-inset-bottom, 0px)); width:48px; height:48px; border:1px solid #fff8; background:var(--forest); color:#fff; }
+.back-to-top[hidden] { display:none; }
+.back-to-top svg { width:22px; height:22px; }
+.back-to-top:hover { background:#253b2e; }
+@media(max-width:580px) {
+  .sticky-whatsapp,.back-to-top { right:16px; }
+  .footer-bottom { padding-right:60px; }
+}

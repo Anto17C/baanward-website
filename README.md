@@ -38,3 +38,8 @@ The review is intentionally excluded from indexing through page metadata and rob
 Original AI-generated residential imagery is illustrative. Optimised WebP desktop and mobile assets are in `images/`. Inter is hosted locally in `fonts/` with its SIL Open Font License. There are no analytics, tracking integrations, external fonts, uploads, payments or client portal.
 
 Keep research, rules, draft images, screenshots and QA evidence outside this repository under the user's corresponding project folders. Include only site source, final assets and necessary repository/hosting configuration here. Do not commit private inquiry material or secrets.
+
+
+## Business contacts
+
+Operator: Baanward Co.LTD. Public inquiry and privacy email: bw@baanward.com. English pages use WhatsApp +66 90 324 7862 (https://wa.me/66903247862), confirmed from Haven Siam at the user's request. The shared floating WhatsApp link does not load a third-party widget. Back-to-top appears after scrolling 500 pixels and respects reduced-motion preferences. LINE is reserved for the future Thai version; do not display it on the English site. Inbox access, email retention, domain ownership and public indexing remain separate confirmations.

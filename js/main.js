@@ -105,3 +105,16 @@ if (form) {
     }
   });
 }
+
+// English pages use WhatsApp. LINE is reserved for the future Thai site.
+const backToTop = document.querySelector('#back-to-top');
+if (backToTop) {
+  const updateBackToTop = () => { backToTop.hidden = window.scrollY < 500; };
+  window.addEventListener('scroll', updateBackToTop, { passive: true });
+  updateBackToTop();
+  backToTop.addEventListener('click', () => {
+    const target = document.querySelector('.site-header .wordmark');
+    target?.focus({ preventScroll: true });
+    window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  });
+}
