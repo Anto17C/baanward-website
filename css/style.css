@@ -1405,3 +1405,22 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
   .dropdown { position:static; width:100%; margin:7px 0; box-shadow:none; }
   .site-header .button.small { align-self:start; }
 }
+
+/* Shared contact icons, inspired by the Walailaklaw contact treatment. */
+.contact-channels { display:flex; align-items:center; gap:12px; }
+.hero-channels { margin-top:16px; height:44px; }
+.channel-link { display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; flex:0 0 44px; border:1px solid #344b3630; border-radius:50%; background:#fffaf0; transition:transform .15s ease,background .15s ease; }
+.channel-link:hover { transform:translateY(-2px); background:#fff; }
+.channel-link:focus-visible { outline:3px solid var(--forest); outline-offset:4px; }
+.channel-link svg,.channel-link img { width:24px; height:24px; }
+.channel-phone { color:#94613f; }
+.channel-email { color:#b34f40; }
+.channel-whatsapp { color:#168348; }
+.channel-line { color:#06c755; }
+.channel-line img { border-radius:5px; }
+.footer-channels { margin-top:18px; }
+.page-hero { padding-top:56px; padding-bottom:36px; }
+.hero-content { padding-bottom:20px; }
+@media(max-width:800px) { .page-hero { padding-top:39px; padding-bottom:21px; } }
+@media(max-width:580px) { .hero-content { padding-top:18px; padding-bottom:0; } }
+@media(prefers-reduced-motion:reduce) { .channel-link { transition:none; } }
