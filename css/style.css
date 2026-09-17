@@ -1425,13 +1425,5 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
 @media(max-width:580px) { .hero-content { padding-top:18px; padding-bottom:0; } }
 @media(prefers-reduced-motion:reduce) { .channel-link { transition:none; } }
 
-/* Match the supporting-page sage and tighten the homepage hero. */
-.hero { background:#e9ecdf; min-height:636px; }
-.hero-content { padding-top:56px; }
-@media(min-width:1500px) { .hero { min-height:686px; } }
-@media(max-width:800px) { .hero { min-height:566px; } }
-@media(max-width:580px) {
-  .hero { min-height:0; }
-  .hero-content { padding-top:18px; }
-  .hero picture { height:306px; }
-}
+/* Match the supporting-page sage background. */
+.hero { background:#e9ecdf; }
