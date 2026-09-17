@@ -1386,3 +1386,22 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
   .sticky-whatsapp,.back-to-top { right:16px; }
   .footer-bottom { padding-right:60px; }
 }
+
+/* A shorter homepage, with detail available through the main navigation. */
+.process-link { color:#fffaf0; border-color:#dce2d280; margin-top:32px; }
+.process-link:hover { color:#e0bb94; }
+.faq-page { max-width:900px; }
+.site-header nav { flex-wrap:wrap; }
+@media(min-width:981px) {
+  .site-header nav { justify-content:flex-end; }
+}
+@media(min-width:801px) and (max-width:980px) {
+  .header-inner { flex-wrap:wrap; gap:0; }
+  .menu-toggle { display:flex; align-items:center; gap:14px; }
+  .site-header nav { display:none; width:100%; align-items:stretch; flex-direction:column; gap:12px; padding:16px 0 24px; }
+  .site-header nav.open { display:flex; }
+  .site-header nav>a:not(.button) { padding:9px 0; }
+  .services-menu summary { padding:9px 0; }
+  .dropdown { position:static; width:100%; margin:7px 0; box-shadow:none; }
+  .site-header .button.small { align-self:start; }
+}

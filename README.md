@@ -27,7 +27,7 @@ The contact form uses the supplied public Web3Forms access key, with `https://ap
 
 The form validates required fields and URL schemes, includes a honeypot, prevents duplicate in-flight submissions, and requires both a successful HTTP response and `success: true`. Failed, malformed or timed-out responses retain details. The submit button stays disabled without JavaScript. No listing URLs are fetched and no uploads are collected.
 
-The content security policy permits connections to Web3Forms. Verify the chosen host applies `_headers`; a basic local server does not apply it automatically. The user confirmed receipt of a real inquiry email on 17 September 2026. Delivery-testing labels have been removed; the form now uses customer-facing confirmation text. The reply-to address was not separately confirmed. Confirm operating entity, privacy contact, authorised recipients and retention arrangements before general launch. The website remains noindex.
+The content security policy permits connections to Web3Forms. Verify the chosen host applies `_headers`; a basic local server does not apply it automatically. The user confirmed receipt of a real inquiry email on 17 September 2026. Delivery-testing labels have been removed; the form now uses customer-facing confirmation text. The reply-to address was not separately confirmed. The operator, privacy contact, team access and default inquiry-retention policy are confirmed in privacy.html. The website remains noindex.
 
 The user handles all commits and pushes manually; this integration does not update the hosted preview automatically.
 
@@ -42,4 +42,11 @@ Keep research, rules, draft images, screenshots and QA evidence outside this rep
 
 ## Business contacts
 
-Operator: Baanward Co.LTD. Public inquiry and privacy email: bw@baanward.com. English pages use WhatsApp +66 90 324 7862 (https://wa.me/66903247862), confirmed from Haven Siam at the user's request. The shared floating WhatsApp link does not load a third-party widget. Back-to-top appears after scrolling 500 pixels and respects reduced-motion preferences. LINE is reserved for the future Thai version; do not display it on the English site. Inbox access, email retention, domain ownership and public indexing remain separate confirmations.
+Operator: Baanward Co.LTD. Public inquiry and privacy email: bw@baanward.com. English pages use WhatsApp +66 90 324 7862 (https://wa.me/66903247862), confirmed from Haven Siam at the user's request. The shared floating WhatsApp link does not load a third-party widget. Back-to-top appears after scrolling 500 pixels and respects reduced-motion preferences. LINE is reserved for the future Thai version; do not display it on the English site. Up to three authorised team members may read inquiries. The default is to retain correspondence unless deletion is requested, subject to applicable legal retention/deletion requirements. Domain ownership and public indexing remain separate confirmations.
+
+Legal referrals are described publicly as “our Thai legal counsel or legal partner”, with permission, conflict checks and separate engagement preserved. Do not name a particular law firm in public website copy.
+
+
+## Page organisation
+
+The main menu includes Home, Services, How we work, About and FAQs. FAQs live in `faqs.html`; maintain answers there. The homepage focuses on the service overview, customer situations and practical deliverables. Detailed process steps, the sample report and specialist responsibilities remain on `how-we-work.html`, with legal/technical responsibilities also explained on About. Keep shared navigation and footer links consistent across all ten HTML pages.
