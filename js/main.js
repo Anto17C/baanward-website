@@ -23,11 +23,13 @@ document.addEventListener('click', (event) => {
 });
 const form = document.querySelector('#inquiry-form');
 if (form) {
-  form.querySelector('button[type="submit"]').disabled = false;
+  const button = form.querySelector('button[type="submit"]');
+  let sending = false;
+  button.disabled = !form.elements.access_key?.value || !form.dataset.endpoint;
   const service = new URLSearchParams(location.search).get('service');
   if (['buyer-support','remote-property-oversight','owner-care'].includes(service)) form.elements.stage.value = service;
   const status = document.querySelector('#form-status');
-  const fields = [...form.querySelectorAll('input, select, textarea')];
+  const fields = [...form.querySelectorAll('.field input, .field select, .field textarea')];
   function clearError(field) {
     field.removeAttribute('aria-invalid');
     document.querySelector('#' + field.id + '-error')?.remove();
@@ -43,6 +45,11 @@ if (form) {
   }
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
+    if (sending) return;
+    if (form.elements.botcheck.checked) {
+      announce('Unable to send this inquiry. Please reload the page and try again.', 'error');
+      return;
+    }
     const invalid = [];
     fields.forEach(field => {
       clearError(field);
@@ -67,29 +74,32 @@ if (form) {
       invalid[0].focus();
       return;
     }
-    // Remains empty until an authorised destination and privacy arrangements are approved.
+    // Web3Forms access keys are intended for public, client-side forms.
     const endpoint = form.dataset.endpoint;
     if (!endpoint) {
-      announce('Your example details are complete. This preview cannot send inquiries. Nothing has been sent or saved.');
+      announce('Inquiry delivery is unavailable. Nothing has been sent.', 'error');
       return;
     }
-    const button = form.querySelector('button[type="submit"]');
+    sending = true;
+    const payload = Object.fromEntries(new FormData(form));
     button.disabled = true;
     form.setAttribute('aria-busy', 'true');
     announce('Sending your inquiry…');
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
     try {
-      const response = await fetch(endpoint, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(Object.fromEntries(new FormData(form))), signal:controller.signal, credentials:'same-origin'});
+      const response = await fetch(endpoint, {method:'POST', headers:{'Content-Type':'application/json', 'Accept':'application/json'}, body:JSON.stringify(payload), signal:controller.signal, credentials:'omit'});
       const result = await response.json();
-      // An HTTP 200 alone is not a delivery receipt. Backend must confirm durable acceptance.
-      if (!response.ok || result.accepted !== true || typeof result.reference !== 'string' || !result.reference.trim()) throw new Error('Unconfirmed delivery');
-      announce('Your inquiry has been received. Reference: ' + result.reference + '.', 'success');
-      form.reset();
+      // Require the provider’s documented success flag as well as a successful HTTP response.
+      if (!response.ok || result.success !== true) throw new Error('Unconfirmed delivery');
+      announce('Thank you. Web3Forms has confirmed that your inquiry was sent. We’ll review your property details and follow up by email.', 'success');
+      // Preserve any edits made while the earlier submission was in flight.
+      if (JSON.stringify(Object.fromEntries(new FormData(form))) === JSON.stringify(payload)) form.reset();
     } catch {
       announce('We could not confirm receipt. Your details remain here. Please try again later; no successful delivery has been confirmed.', 'error');
     } finally {
       clearTimeout(timeout);
+      sending = false;
       button.disabled = false;
       form.removeAttribute('aria-busy');
     }

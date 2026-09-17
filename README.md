@@ -23,9 +23,13 @@ Preserve the existing GitHub `origin`. The user handles all staging, commits and
 
 ## Inquiry delivery and launch
 
-The form currently validates locally only. Its empty `data-endpoint` intentionally prevents delivery. No entries are persisted. Before enabling collection, confirm the responsible business entity, privacy contact, authorised destination, retention and processing arrangements. Update the privacy notice, preview labels and button copy together. Implement server-side validation, abuse protection, size limits, secure storage/delivery and an explicit durable receipt contract: `{ "accepted": true, "reference": "..." }`. HTTP success alone is not accepted as confirmation. Errors retain entered details. Never fetch submitted listing URLs automatically. Do not add credentials to frontend code.
+The contact form uses the supplied public Web3Forms access key, with `https://api.web3forms.com/submit` as its endpoint. Configuration is in `contact.html`; submission behaviour is in `js/main.js`. The `email` field supplies the reply-to address; other property fields accompany the message. The key is a public form identifier, not a private server credential.
 
-The current content security policy allows same-origin connections only and prevents native form posts; JavaScript uses the configured same-origin endpoint. Adjust deliberately if an approved external delivery provider is used. Verify the chosen host applies `_headers`; these headers are not automatically applied by a basic local development server.
+The form validates required fields and URL schemes, includes a honeypot, prevents duplicate in-flight submissions, and requires both a successful HTTP response and `success: true`. Failed, malformed or timed-out responses retain details. The submit button stays disabled without JavaScript. No listing URLs are fetched and no uploads are collected.
+
+The content security policy permits connections to Web3Forms. Verify the chosen host applies `_headers`; a basic local server does not apply it automatically. Delivery testing uses example information only. Browser simulations do not prove the key’s destination or inbox delivery: send a real test after publishing and confirm its arrival and reply-to address. Confirm operating entity, privacy contact, authorised recipients and retention arrangements before general launch. The website remains noindex.
+
+The user handles all commits and pushes manually; this integration does not update the hosted preview automatically.
 
 The review is intentionally excluded from indexing through page metadata and robots.txt. After public launch approval, replace those directives, confirm the domain, then add correct canonical URLs and a sitemap. No domain, DNS or contact destination is assumed. Prices remain scoped quotes.
 

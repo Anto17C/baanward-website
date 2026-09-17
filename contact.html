@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><title>Tell Us About Your Property | Baanward</title>
-<meta name="description" content="Tell Baanward about your property, location, stage and concern. Inquiry delivery is not yet connected in this preview.">
+<meta name="description" content="Tell Baanward about your property, location, stage and concern. Send a practical property inquiry through Web3Forms.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#35493e">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2335493e'/%3E%3Cpath d='M7 15L16 7l9 8M10 13v12h12V13M14 25v-8h4v8' fill='none' stroke='%23e4bb96' stroke-width='2'/%3E%3C/svg%3E">
@@ -40,22 +40,26 @@
 <section class="section">
 <div class="container contact-layout">
 <aside>
-<div class="preview-notice"><span class="eyebrow">PREVIEW ONLY</span>
-<h2>Inquiries are not yet connected.
+<div class="preview-notice"><span class="eyebrow">DELIVERY TESTING</span>
+<h2>The inquiry form is connected.
 </h2>
-<p>This form is available to review, but cannot send your details. Please use example information only.
+<p>Submissions now go through Web3Forms. While we check delivery, please use example information only.
 </p>
 </div>
 <h3>What happens next?
 </h3>
-<p>Once inquiries are connected, we’ll review the location and task, clarify what help is available and agree a scope and quote before work begins.
+<p>We’ll review the location and task, clarify what help is available and agree a scope and quote before work begins.
 </p>
 <p>Service focus: Pattaya, Chonburi and Rayong. Other locations on request.
 </p>
 <p class="note">Please do not include passports, deeds, contracts, bank details or confidential dispute information.
 </p><a class="text-link" href="privacy.html">Privacy &amp; this preview <span aria-hidden="true">↗</span></a>
 </aside>
-<form id="inquiry-form" novalidate data-endpoint="">
+<form id="inquiry-form" novalidate data-endpoint="https://api.web3forms.com/submit">
+<input type="hidden" name="access_key" value="deb3a369-5a2b-4384-b17a-68398da0b57d">
+<input type="hidden" name="subject" value="Baanward — New property inquiry">
+<input type="hidden" name="from_name" value="Baanward website">
+<div hidden><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-label="Leave unchecked"></div>
 <p class="form-intro">Fields marked <span aria-hidden="true">*</span> are required for a complete inquiry.
 </p>
 <div id="form-status" class="form-status" role="status" aria-live="polite" tabindex="-1">
@@ -125,7 +129,7 @@
 <div class="field full">
 <label for="concern">What would you like help with? <span>*</span>
 </label>
-<textarea id="concern" name="concern" rows="5" required maxlength="3000" aria-describedby="concern-help">
+<textarea id="concern" name="message" rows="5" required maxlength="3000" aria-describedby="concern-help">
 </textarea><span id="concern-help" class="field-help">Briefly describe the task. Please leave out sensitive personal or legal details.</span>
 </div>
 <div class="field">
@@ -141,12 +145,12 @@
 </div>
 <p class="note">No files are requested. Entering a listing link does not open or retrieve it automatically.
 </p>
-<button class="button" type="submit" disabled>Check inquiry details <span aria-hidden="true">↗</span>
+<button class="button" type="submit" disabled>Send inquiry <span aria-hidden="true">↗</span>
 </button>
-<p class="field-help">Preview check only. Nothing will be sent or saved by this form.
+<p class="field-help">Your details will be sent through Web3Forms to the inbox configured for Baanward. Read our <a href="privacy.html">privacy information</a> before sending.
 </p>
 <noscript>
-<p class="preview-notice">JavaScript is required to check these details. Submission is unavailable in this preview.
+<p class="preview-notice">JavaScript is required to send this form. Nothing is sent while JavaScript is disabled.
 </p>
 </noscript>
 </form>
