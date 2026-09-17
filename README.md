@@ -27,7 +27,7 @@ The contact form uses the supplied public Web3Forms access key, with `https://ap
 
 The form validates required fields and URL schemes, includes a honeypot, prevents duplicate in-flight submissions, and requires both a successful HTTP response and `success: true`. Failed, malformed or timed-out responses retain details. The submit button stays disabled without JavaScript. No listing URLs are fetched and no uploads are collected.
 
-The content security policy permits connections to Web3Forms. Verify the chosen host applies `_headers`; a basic local server does not apply it automatically. Delivery testing uses example information only. Browser simulations do not prove the key’s destination or inbox delivery: send a real test after publishing and confirm its arrival and reply-to address. Confirm operating entity, privacy contact, authorised recipients and retention arrangements before general launch. The website remains noindex.
+The content security policy permits connections to Web3Forms. Verify the chosen host applies `_headers`; a basic local server does not apply it automatically. The user confirmed receipt of a real inquiry email on 17 September 2026. Delivery-testing labels have been removed; the form now uses customer-facing confirmation text. The reply-to address was not separately confirmed. Confirm operating entity, privacy contact, authorised recipients and retention arrangements before general launch. The website remains noindex.
 
 The user handles all commits and pushes manually; this integration does not update the hosted preview automatically.
 

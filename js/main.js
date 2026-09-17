@@ -92,11 +92,11 @@ if (form) {
       const result = await response.json();
       // Require the provider’s documented success flag as well as a successful HTTP response.
       if (!response.ok || result.success !== true) throw new Error('Unconfirmed delivery');
-      announce('Thank you. Web3Forms has confirmed that your inquiry was sent. We’ll review your property details and follow up by email.', 'success');
+      announce('Thank you for getting in touch. Your inquiry has been sent. We’ll review the details and reply by email.', 'success');
       // Preserve any edits made while the earlier submission was in flight.
       if (JSON.stringify(Object.fromEntries(new FormData(form))) === JSON.stringify(payload)) form.reset();
     } catch {
-      announce('We could not confirm receipt. Your details remain here. Please try again later; no successful delivery has been confirmed.', 'error');
+      announce('We couldn’t confirm that your inquiry was sent. Your details are still here. Please try again.', 'error');
     } finally {
       clearTimeout(timeout);
       sending = false;
