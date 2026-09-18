@@ -1384,7 +1384,7 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
 .back-to-top:hover { background:#253b2e; }
 @media(max-width:580px) {
   .sticky-whatsapp,.back-to-top { right:16px; }
-  .footer-bottom { padding-right:60px; }
+  .footer-bottom { padding-inline:60px; align-items:center; text-align:center; }
 }
 
 /* A shorter homepage, with detail available through the main navigation. */
@@ -1432,3 +1432,15 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
 .wordmark { position:relative; }
 .wordmark-original { visibility:hidden; }
 .wordmark-image { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; }
+
+/* Slim contact bar trial; keep navigation and hero dimensions unchanged. */
+.header-contact-bar { background:var(--forest); color:#fffaf0; }
+.header-channels { height:36px; justify-content:flex-end; gap:8px; }
+.header-channels .channel-link { width:44px; height:36px; flex-basis:44px; border:0; border-radius:0; background:transparent; color:#fffaf0; }
+.header-channels .channel-link svg,.header-channels .channel-link img { width:20px; height:20px; }
+.header-channels .channel-link:hover { background:#ffffff18; transform:none; }
+.header-channels .channel-link:focus-visible { outline:2px solid #fffaf0; outline-offset:-3px; }
+.page-hero { padding-top:86px; padding-bottom:66px; }
+.hero-content { padding-bottom:80px; }
+@media(max-width:800px) { .page-hero { padding-top:69px; padding-bottom:51px; } }
+@media(max-width:580px) { .hero-content { padding-top:44px; padding-bottom:34px; } }
