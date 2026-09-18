@@ -118,3 +118,41 @@ if (backToTop) {
     window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
   });
 }
+
+
+// Illustrative property concerns, not quotations from client inquiries.
+const propertyTicker = document.querySelector('.property-ticker');
+if (propertyTicker) {
+  const windowElement = propertyTicker.querySelector('.ticker-window');
+  const track = propertyTicker.querySelector('.ticker-track');
+  const phrases = propertyTicker.querySelector('.ticker-phrases');
+  const toggle = propertyTicker.querySelector('.ticker-toggle');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const copy = phrases.cloneNode(true);
+  copy.classList.add('ticker-copy');
+  copy.setAttribute('aria-hidden', 'true');
+  let paused = false;
+  const updateMotion = () => {
+    copy.remove();
+    propertyTicker.classList.toggle('is-moving', !reducedMotion.matches);
+    toggle.hidden = reducedMotion.matches;
+    if (!reducedMotion.matches) {
+      track.append(copy);
+      windowElement.scrollLeft = 0;
+    }
+  };
+  const updateSpeed = () => {
+    propertyTicker.style.setProperty('--ticker-duration', `${phrases.getBoundingClientRect().width / 28}s`);
+  };
+  toggle.addEventListener('click', () => {
+    paused = !paused;
+    propertyTicker.classList.toggle('is-paused', paused);
+    toggle.setAttribute('aria-pressed', String(paused));
+    toggle.setAttribute('aria-label', `${paused ? 'Resume' : 'Pause'} property concerns`);
+    toggle.firstElementChild.textContent = paused ? '▶' : 'Ⅱ';
+  });
+  reducedMotion.addEventListener('change', updateMotion);
+  new ResizeObserver(updateSpeed).observe(phrases);
+  updateSpeed();
+  updateMotion();
+}

@@ -1450,3 +1450,32 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
 
 /* Optical sizing for WhatsApp in the slim contact bar. */
 .header-channels .channel-whatsapp svg { width:22px; height:22px; }
+
+/* Common property concerns: a calm ticker beside fixed contact links. */
+.contact-bar-inner { display:flex; align-items:center; gap:16px; min-height:36px; }
+.property-ticker { display:flex; flex:1; min-width:0; align-items:center; gap:4px; }
+.ticker-window { flex:1; min-width:0; overflow-x:auto; scrollbar-width:none; }
+.ticker-window::-webkit-scrollbar { display:none; }
+.ticker-track { display:flex; width:max-content; }
+.ticker-phrases { display:flex; align-items:center; width:max-content; margin:0; padding:0; list-style:none; }
+.ticker-phrases li { flex:none; white-space:nowrap; font-size:12px; line-height:24px; padding-right:40px; }
+.ticker-phrases li::after { content:'·'; margin-left:40px; color:#e0bb94; }
+.ticker-toggle { display:flex; flex:none; align-items:center; justify-content:center; width:28px; height:28px; padding:0; border:0; border-radius:4px; background:transparent; color:#fffaf0; cursor:pointer; font-size:15px; }
+.ticker-toggle[hidden] { display:none; }
+.ticker-toggle:hover { background:#ffffff18; }
+.header-contact-bar .ticker-toggle:focus-visible,.header-contact-bar .ticker-window:focus-visible { outline:2px solid #fffaf0; outline-offset:-2px; }
+.header-channels { flex:none; }
+.property-ticker.is-moving .ticker-window { overflow:hidden; }
+.property-ticker.is-moving .ticker-track { animation:property-concerns-scroll var(--ticker-duration,160s) linear infinite; }
+.property-ticker.is-paused .ticker-track,.property-ticker:hover .ticker-track,.property-ticker:focus-within .ticker-track { animation-play-state:paused; }
+@keyframes property-concerns-scroll { to { transform:translateX(-50%); } }
+@media(max-width:580px) {
+  .contact-bar-inner { gap:6px; }
+  .header-channels { gap:0; }
+  .header-channels .channel-link { width:30px; flex-basis:30px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .property-ticker.is-moving .ticker-track { animation:none; }
+  .property-ticker.is-moving .ticker-window { overflow-x:auto; }
+  .ticker-toggle,.ticker-copy { display:none; }
+}
