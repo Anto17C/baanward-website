@@ -1427,3 +1427,8 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
 
 /* Match the supporting-page sage background. */
 .hero { background:#e9ecdf; }
+
+/* Logo asset trial: original lettering reserves the existing logo dimensions. */
+.wordmark { position:relative; }
+.wordmark-original { visibility:hidden; }
+.wordmark-image { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; }

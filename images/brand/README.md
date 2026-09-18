@@ -12,4 +12,4 @@ Browser assets: favicon.svg, favicon.ico (16/32/48px), favicon-16x16.png, favico
 
 Use SVG for scalable artwork and PNG for documents or uploads. Preserve proportions and clear space. Keep taglines separate. Use light or white versions on dark backgrounds.
 
-Prepared assets only: existing website wordmarks and favicon references have not been changed.
+Logo trial applied 18 September 2026: the primary SVG is used in every header and footer; SVG/PNG favicons and the Apple touch icon are linked on every page. Pre-trial HTML/CSS copies are saved outside the repository in 3- Files/Baanward/Brand logo trial/Before logo trial. Original text remains hidden in the wordmark to preserve its dimensions.
