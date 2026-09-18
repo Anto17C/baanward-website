@@ -1447,3 +1447,6 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
 
 /* Optical sizing for the footer WhatsApp artwork. */
 .footer-channels .channel-whatsapp svg { width:27px; height:27px; }
+
+/* Optical sizing for WhatsApp in the slim contact bar. */
+.header-channels .channel-whatsapp svg { width:22px; height:22px; }
