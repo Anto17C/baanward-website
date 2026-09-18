@@ -1444,3 +1444,6 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
 .hero-content { padding-bottom:80px; }
 @media(max-width:800px) { .page-hero { padding-top:69px; padding-bottom:51px; } }
 @media(max-width:580px) { .hero-content { padding-top:44px; padding-bottom:34px; } }
+
+/* Optical sizing for the footer WhatsApp artwork. */
+.footer-channels .channel-whatsapp svg { width:27px; height:27px; }
