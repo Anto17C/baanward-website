@@ -1372,7 +1372,7 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
 .contact-details p { margin-bottom:12px; }
 .contact-details .text-link { display:table; margin-bottom:14px; }
 .footer-grid>div>a.footer-email { display:inline-block; margin-top:14px; }
-.sticky-whatsapp,.back-to-top {
+.sticky-whatsapp,.sticky-line,.back-to-top {
   position:fixed;
   right:24px;
   display:flex;
@@ -1390,7 +1390,7 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
 .back-to-top svg { width:22px; height:22px; }
 .back-to-top:hover { background:#253b2e; }
 @media(max-width:580px) {
-  .sticky-whatsapp,.back-to-top { right:16px; }
+  .sticky-whatsapp,.sticky-line,.back-to-top { right:16px; }
   .footer-bottom { padding-inline:60px; align-items:center; text-align:center; }
 }
 
