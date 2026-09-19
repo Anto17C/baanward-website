@@ -5,6 +5,13 @@
   font-weight:100 900;
   font-display:swap
 }
+@font-face {
+  font-family:'Noto Sans Thai';
+  src:url('../fonts/noto-sans-thai.woff2') format('woff2');
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap
+}
 
 :root {
   --forest:#35493e;
@@ -510,7 +517,7 @@ strong {
   border-radius:4px;
   padding:6px 9px;
   height:fit-content;
-  max-width:90px
+  max-width:170px
 }
 .report-meta {
   font-size:.75rem;
@@ -1479,3 +1486,26 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
   .property-ticker.is-moving .ticker-window { overflow-x:auto; }
   .ticker-toggle,.ticker-copy { display:none; }
 }
+
+/* Language switcher: shows the languages you are not currently reading. */
+.lang-switch { display:flex; align-items:center; gap:14px; font-size:.85rem; font-weight:600; }
+.lang-switch a:hover { color:var(--clay); }
+
+/* Sticky LINE action for Thai pages, sized to match the shared WhatsApp button. */
+.sticky-line { bottom:calc(88px + env(safe-area-inset-bottom, 0px)); width:56px; height:56px; background:#fff; }
+.sticky-line img { width:40px; height:40px; border-radius:10px; }
+.sticky-line:hover { background:#f2f2ea; }
+
+/* Thai typography: a self-hosted Thai-supporting face, with tracking and leading eased
+   for stacked vowel/tone marks (the Latin site's tight negative tracking clips them). */
+body.lang-th { font-family:'Noto Sans Thai',Inter,Arial,sans-serif; }
+body.lang-th h1,body.lang-th h2,body.lang-th h3,body.lang-th h4,
+body.lang-th .wordmark,body.lang-th .service-card h3,body.lang-th .package h3,
+body.lang-th .steps h3,body.lang-th .report h3,body.lang-th .footer-grid h2 {
+  font-family:'Noto Sans Thai',Inter,Arial,sans-serif;
+  font-weight:600;
+  letter-spacing:normal;
+}
+body.lang-th h1,body.lang-th h2,body.lang-th h3,body.lang-th h4 { line-height:1.35; }
+body.lang-th .eyebrow { letter-spacing:.02em; }
+body.lang-th .wordmark { letter-spacing:normal; }

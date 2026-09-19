@@ -43,11 +43,26 @@ if (form) {
     status.textContent = message;
     status.focus();
   }
+  // Status and validation copy lives on the form as data-msg-* attributes so each language
+  // page supplies its own text; English defaults below only guard a missing attribute.
+  const msg = Object.assign({
+    msgBotcheck: 'Unable to send this inquiry. Please reload the page and try again.',
+    msgRequired: 'Please complete this field.',
+    msgEmail: 'Enter a valid email address.',
+    msgUrl: 'Enter a full link beginning with https:// or http://.',
+    msgGeneric: 'Please check this value.',
+    msgUrlScheme: 'Use a link beginning with https:// or http://.',
+    msgHighlighted: 'Please check the highlighted fields. Nothing has been sent.',
+    msgUnavailable: 'Inquiry delivery is unavailable. Nothing has been sent.',
+    msgSending: 'Sending your inquiry…',
+    msgSuccess: 'Thank you for getting in touch. Your inquiry has been sent. We’ll review the details and reply by email.',
+    msgError: 'We couldn’t confirm that your inquiry was sent. Your details are still here. Please try again.'
+  }, form.dataset);
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
     if (sending) return;
     if (form.elements.botcheck.checked) {
-      announce('Unable to send this inquiry. Please reload the page and try again.', 'error');
+      announce(msg.msgBotcheck, 'error');
       return;
     }
     const invalid = [];
@@ -55,8 +70,8 @@ if (form) {
       clearError(field);
       if (field.type !== 'date') field.value = field.value.trim();
       let message = '';
-      if (!field.validity.valid) message = field.validity.valueMissing ? 'Please complete this field.' : field.type === 'email' ? 'Enter a valid email address.' : field.type === 'url' ? 'Enter a full link beginning with https:// or http://.' : 'Please check this value.';
-      if (field.name === 'listingUrl' && field.value && !/^https?:\/\//i.test(field.value)) message = 'Use a link beginning with https:// or http://.';
+      if (!field.validity.valid) message = field.validity.valueMissing ? msg.msgRequired : field.type === 'email' ? msg.msgEmail : field.type === 'url' ? msg.msgUrl : msg.msgGeneric;
+      if (field.name === 'listingUrl' && field.value && !/^https?:\/\//i.test(field.value)) message = msg.msgUrlScheme;
       if (message) {
         invalid.push(field);
         field.setAttribute('aria-invalid', 'true');
@@ -70,21 +85,21 @@ if (form) {
     });
     if (invalid.length) {
       status.className = 'form-status error';
-      status.textContent = 'Please check the highlighted fields. Nothing has been sent.';
+      status.textContent = msg.msgHighlighted;
       invalid[0].focus();
       return;
     }
     // Web3Forms access keys are intended for public, client-side forms.
     const endpoint = form.dataset.endpoint;
     if (!endpoint) {
-      announce('Inquiry delivery is unavailable. Nothing has been sent.', 'error');
+      announce(msg.msgUnavailable, 'error');
       return;
     }
     sending = true;
     const payload = Object.fromEntries(new FormData(form));
     button.disabled = true;
     form.setAttribute('aria-busy', 'true');
-    announce('Sending your inquiry…');
+    announce(msg.msgSending);
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
     try {
@@ -92,11 +107,11 @@ if (form) {
       const result = await response.json();
       // Require the provider’s documented success flag as well as a successful HTTP response.
       if (!response.ok || result.success !== true) throw new Error('Unconfirmed delivery');
-      announce('Thank you for getting in touch. Your inquiry has been sent. We’ll review the details and reply by email.', 'success');
+      announce(msg.msgSuccess, 'success');
       // Preserve any edits made while the earlier submission was in flight.
       if (JSON.stringify(Object.fromEntries(new FormData(form))) === JSON.stringify(payload)) form.reset();
     } catch {
-      announce('We couldn’t confirm that your inquiry was sent. Your details are still here. Please try again.', 'error');
+      announce(msg.msgError, 'error');
     } finally {
       clearTimeout(timeout);
       sending = false;
@@ -106,7 +121,7 @@ if (form) {
   });
 }
 
-// English pages use WhatsApp. LINE is reserved for the future Thai site.
+// Which channel floats (WhatsApp or LINE) is set per language in each page's markup.
 const backToTop = document.querySelector('#back-to-top');
 if (backToTop) {
   const updateBackToTop = () => { backToTop.hidden = window.scrollY < 500; };
@@ -144,11 +159,15 @@ if (propertyTicker) {
   const updateSpeed = () => {
     propertyTicker.style.setProperty('--ticker-duration', `${phrases.getBoundingClientRect().width / 28}s`);
   };
+  // The pause/resume labels are supplied per language via data attributes on the button,
+  // with its initial aria-label (the pause state) as the fallback.
+  const pauseLabel = toggle.dataset.labelPause || toggle.getAttribute('aria-label');
+  const resumeLabel = toggle.dataset.labelResume || pauseLabel;
   toggle.addEventListener('click', () => {
     paused = !paused;
     propertyTicker.classList.toggle('is-paused', paused);
     toggle.setAttribute('aria-pressed', String(paused));
-    toggle.setAttribute('aria-label', `${paused ? 'Resume' : 'Pause'} property concerns`);
+    toggle.setAttribute('aria-label', paused ? resumeLabel : pauseLabel);
     toggle.firstElementChild.textContent = paused ? '▶' : 'Ⅱ';
   });
   reducedMotion.addEventListener('change', updateMotion);
