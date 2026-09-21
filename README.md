@@ -42,7 +42,7 @@ Keep research, rules, draft images, screenshots and QA evidence outside this rep
 
 ## Business contacts
 
-Operator: Baanward Co.LTD. Public inquiry and privacy email: bw@baanward.com. English pages use WhatsApp +66 90 324 7862 (https://wa.me/66903247862), confirmed from Haven Siam at the user's request. The shared floating WhatsApp link does not load a third-party widget. Back-to-top appears after scrolling 500 pixels and respects reduced-motion preferences. LINE is reserved for the future Thai version; do not display it on the English site. Up to three authorised team members may read inquiries. The default is to retain correspondence unless deletion is requested, subject to applicable legal retention/deletion requirements. Domain ownership and public indexing remain separate confirmations.
+Operator: Baanward Co.LTD. Public inquiry and privacy email: contact@baanward.com. English pages use WhatsApp +66 90 324 7862 (https://wa.me/66903247862), confirmed from Haven Siam at the user's request. The shared floating WhatsApp link does not load a third-party widget. Back-to-top appears after scrolling 500 pixels and respects reduced-motion preferences. LINE is reserved for the future Thai version; do not display it on the English site. Up to three authorised team members may read inquiries. The default is to retain correspondence unless deletion is requested, subject to applicable legal retention/deletion requirements. Domain ownership and public indexing remain separate confirmations.
 
 Legal referrals are described publicly as “our Thai legal counsel or legal partner”, with permission, conflict checks and separate engagement preserved. Do not name a particular law firm in public website copy.
 
