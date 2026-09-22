@@ -26,8 +26,11 @@ if (form) {
   const button = form.querySelector('button[type="submit"]');
   let sending = false;
   button.disabled = !form.elements.access_key?.value || !form.dataset.endpoint;
-  const service = new URLSearchParams(location.search).get('service');
+  const queryParams = new URLSearchParams(location.search);
+  const service = queryParams.get('service');
   if (['buyer-support','remote-property-oversight','owner-care'].includes(service)) form.elements.stage.value = service;
+  const cityParam = queryParams.get('location');
+  if (cityParam && form.elements.location) form.elements.location.value = cityParam;
   const status = document.querySelector('#form-status');
   const fields = [...form.querySelectorAll('.field input, .field select, .field textarea')];
   function clearError(field) {
