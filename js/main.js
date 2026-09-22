@@ -1,29 +1,33 @@
 'use strict';
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
-// The header can hold more than one nav dropdown (Services, Coverage Areas, ...),
-// so these handle every .services-menu element, not just the first.
-const navDropdowns = [...document.querySelectorAll('.services-menu')];
+// Services and Coverage Areas are real links with a hover-opening dropdown (desktop).
+// On mobile, hover doesn't apply, so opening the menu expands every dropdown at once,
+// and tapping a caret toggles just that one—matching the rest of the menu being visible.
+const navItems = [...document.querySelectorAll('.nav-item')];
+const MOBILE_QUERY = '(max-width: 980px)';
 menuButton?.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') !== 'true';
   menuButton.setAttribute('aria-expanded', String(open));
   navigation.classList.toggle('open', open);
+  navItems.forEach(item => item.classList.toggle('mobile-open', open));
 });
 document.addEventListener('keydown', (event) => {
   if (event.key !== 'Escape') return;
-  const openMenu = navDropdowns.find(menu => menu.open);
-  if (openMenu) {
-    openMenu.open = false;
-    openMenu.querySelector('summary').focus();
-  } else if (navigation?.classList.contains('open')) {
+  if (navigation?.classList.contains('open')) {
     navigation.classList.remove('open');
+    navItems.forEach(item => item.classList.remove('mobile-open'));
     menuButton.setAttribute('aria-expanded', 'false');
     menuButton.focus();
   }
 });
-document.addEventListener('click', (event) => {
-  navDropdowns.forEach(menu => {
-    if (menu.open && !menu.contains(event.target)) menu.open = false;
+navItems.forEach(item => {
+  const caret = item.querySelector('.caret');
+  caret?.addEventListener('click', (event) => {
+    if (!window.matchMedia(MOBILE_QUERY).matches) return;
+    event.preventDefault();
+    event.stopPropagation();
+    item.classList.toggle('mobile-open');
   });
 });
 const form = document.querySelector('#inquiry-form');

@@ -61,8 +61,7 @@ h1,h2,h3,h4,p {
   margin-top:0
 }
 h1,h2,h3,h4 {
-  line-height:1.17;
-  letter-spacing:-.035em
+  line-height:1.17
 }
 h1 {
   font-size:clamp(2rem,3.6vw,2.75rem);
@@ -159,17 +158,21 @@ strong {
 .site-header [aria-current=page] {
   color:var(--clay)
 }
-.services-menu {
+.nav-item {
   position:relative
 }
-.services-menu summary {
+.nav-item>a {
   display:flex;
-  gap:12px;
-  list-style:none;
+  align-items:center;
+  gap:6px;
   padding:15px 0
 }
-.services-menu summary::-webkit-details-marker {
-  display:none
+.nav-item .caret {
+  font-size:.65em;
+  transition:transform .15s ease
+}
+.nav-item:hover .caret,.nav-item:focus-within .caret {
+  transform:rotate(180deg)
 }
 .dropdown {
   position:absolute;
@@ -181,7 +184,18 @@ strong {
   padding:10px;
   border:1px solid var(--line);
   border-radius:8px;
-  box-shadow:0 12px 30px #0002
+  box-shadow:0 12px 30px #0002;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(-6px);
+  transition:opacity .15s ease,transform .15s ease,visibility .15s ease;
+  max-height:70vh;
+  overflow-y:auto
+}
+.nav-item:hover .dropdown,.nav-item:focus-within .dropdown {
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0)
 }
 .dropdown a {
   display:block;
@@ -194,16 +208,6 @@ strong {
 .dropdown a[aria-current=page] {
   color:#805200;
   background:var(--soft)
-}
-.dropdown a.dropdown-all {
-  border-top:1px solid var(--line);
-  margin-top:6px;
-  padding-top:14px;
-  font-weight:650
-}
-.services-menu .dropdown {
-  max-height:70vh;
-  overflow-y:auto
 }
 .button {
   display:inline-flex;
@@ -976,14 +980,21 @@ input:focus,select:focus,textarea:focus {
 .site-header nav>a:not(.button) {
   padding:9px 0
 }
-.services-menu summary {
+.nav-item>a {
   padding:9px 0
 }
 .dropdown {
   position:static;
   width:100%;
   margin:7px 0;
-  box-shadow:none
+  box-shadow:none;
+  opacity:1;
+  visibility:visible;
+  transform:none;
+  display:none
+}
+.nav-item.mobile-open .dropdown {
+  display:block
 }
 .site-header .button.small {
   font-size:.9rem;
@@ -1258,8 +1269,9 @@ h1,h2,h3,h4,p,a {
 
 /* Warm residential direction: linen, garden greens and fired-clay accents. */
 body { background:#faf8f2; }
-h1,h2 { font-family:Georgia,'Times New Roman',serif; font-weight:400; letter-spacing:-.045em; line-height:1.09; }
-h3 { font-family:Georgia,'Times New Roman',serif; font-weight:400; letter-spacing:-.025em; }
+h1,h2 { font-family:Georgia,'Times New Roman',serif; font-weight:400; line-height:1.09; }
+h3 { font-family:Georgia,'Times New Roman',serif; font-weight:400; }
+.hero h1,.page-hero h1 { letter-spacing:-.01em; }
 .eyebrow { letter-spacing:.11em; }
 .site-header { background:#faf8f2; color:var(--ink); border-bottom:1px solid var(--line); }
 .header-inner { min-height:98px; }
@@ -1418,8 +1430,9 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
   .site-header nav { display:none; width:100%; align-items:stretch; flex-direction:column; gap:12px; padding:16px 0 24px; }
   .site-header nav.open { display:flex; }
   .site-header nav>a:not(.button) { padding:9px 0; }
-  .services-menu summary { padding:9px 0; }
-  .dropdown { position:static; width:100%; margin:7px 0; box-shadow:none; }
+  .nav-item>a { padding:9px 0; }
+  .dropdown { position:static; width:100%; margin:7px 0; box-shadow:none; opacity:1; visibility:visible; transform:none; display:none; }
+  .nav-item.mobile-open .dropdown { display:block; }
   .site-header .button.small { align-self:start; }
 }
 
@@ -1554,11 +1567,11 @@ body.lang-th .wordmark { letter-spacing:normal; }
   margin-top:20px;
 }
 .site-header { box-shadow:0 3px 18px #2e403709; }
-.site-header nav>a:not(.button),.services-menu summary {
+.site-header nav>a:not(.button),.nav-item>a {
   border-radius:8px;
   transition:background .18s,color .18s;
 }
-.site-header nav>a:not(.button):hover,.services-menu summary:hover {
+.site-header nav>a:not(.button):hover,.nav-item>a:hover {
   background:#e9ecdf;
   color:#77432f;
 }
@@ -1603,7 +1616,7 @@ input,select,textarea { background:#fff; }
 }
 @media(prefers-reduced-motion:reduce) {
   html { scroll-behavior:auto; }
-  .button,.service-card,.site-header nav>a,.services-menu summary { transition:none; }
+  .button,.service-card,.site-header nav>a,.nav-item>a { transition:none; }
   .button:hover,.service-card:hover { transform:none; }
 }
 
