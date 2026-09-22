@@ -65,21 +65,21 @@ h1,h2,h3,h4 {
   letter-spacing:-.035em
 }
 h1 {
-  font-size:clamp(2.7rem,5.1vw,4.65rem);
+  font-size:clamp(2rem,3.6vw,2.75rem);
   font-weight:600;
-  margin-bottom:26px
+  margin-bottom:22px
 }
 h2 {
-  font-size:clamp(2rem,3.25vw,3rem);
+  font-size:clamp(1.5rem,2.3vw,1.875rem);
   font-weight:600;
-  margin-bottom:24px
+  margin-bottom:20px
 }
 h3 {
-  font-size:1.4rem;
+  font-size:1.15rem;
   font-weight:600
 }
 h4 {
-  font-size:1rem;
+  font-size:.95rem;
   letter-spacing:-.01em
 }
 p {
@@ -194,6 +194,16 @@ strong {
 .dropdown a[aria-current=page] {
   color:#805200;
   background:var(--soft)
+}
+.dropdown a.dropdown-all {
+  border-top:1px solid var(--line);
+  margin-top:6px;
+  padding-top:14px;
+  font-weight:650
+}
+.services-menu .dropdown {
+  max-height:70vh;
+  overflow-y:auto
 }
 .button {
   display:inline-flex;
@@ -384,7 +394,7 @@ strong {
   color:var(--muted)
 }
 .service-card h3 {
-  font-size:1.6rem;
+  font-size:1.25rem;
   max-width:290px
 }
 .service-card p:not(.eyebrow) {
@@ -688,11 +698,11 @@ strong {
   position:relative
 }
 .page-hero h1 {
-  font-size:clamp(2.5rem,4.8vw,4.2rem);
+  font-size:clamp(1.8rem,3.4vw,2.4rem);
   max-width:920px
 }
 .lead {
-  font-size:1.1rem;
+  font-size:1rem;
   max-width:650px;
   color:#66695d;
   margin-bottom:0
@@ -713,7 +723,7 @@ strong {
   margin-bottom:24px
 }
 .package h3 {
-  font-size:1.65rem
+  font-size:1.3rem
 }
 .package-subtitle {
   font-weight:600;
@@ -779,7 +789,7 @@ strong {
   margin-bottom:32px
 }
 .preview-notice h2 {
-  font-size:1.4rem;
+  font-size:1.2rem;
   letter-spacing:-.02em
 }
 .preview-notice p {
@@ -877,7 +887,7 @@ input:focus,select:focus,textarea:focus {
   max-width:790px
 }
 .prose h2 {
-  font-size:1.6rem;
+  font-size:1.3rem;
   margin-top:40px
 }
 .prose h2:first-child {
@@ -918,7 +928,7 @@ input:focus,select:focus,textarea:focus {
   padding:26px 23px
 }
 .service-card h3 {
-  font-size:1.4rem
+  font-size:1.15rem
 }
 .four-grid {
   gap:24px
@@ -930,7 +940,7 @@ input:focus,select:focus,textarea:focus {
   max-width:470px
 }
 .hero h1 {
-  font-size:3.8rem
+  font-size:2.4rem
 }
 .steps {
   gap:24px
@@ -983,7 +993,7 @@ input:focus,select:focus,textarea:focus {
   min-height:600px
 }
 .hero h1 {
-  font-size:3.3rem
+  font-size:2.1rem
 }
 .hero-shade {
   background:linear-gradient(90deg,#35493eed,#35493ebb 45%,#35493e50)
@@ -1024,7 +1034,7 @@ input:focus,select:focus,textarea:focus {
   font-size:.65rem
 }
 .service-card h3 {
-  font-size:1.23rem
+  font-size:1.05rem
 }
 .service-card p:not(.eyebrow) {
   font-size:.88rem
@@ -1087,7 +1097,7 @@ input:focus,select:focus,textarea:focus {
   padding:52px 0 260px
 }
 .hero h1 {
-  font-size:clamp(2.55rem,10.4vw,3.5rem);
+  font-size:clamp(1.9rem,7.8vw,2.5rem);
   margin-bottom:22px
 }
 .hero-content>p:not(.eyebrow) {
@@ -1132,7 +1142,7 @@ input:focus,select:focus,textarea:focus {
   padding:28px
 }
 .service-card h3 {
-  font-size:1.6rem;
+  font-size:1.25rem;
   max-width:290px
 }
 .service-card p:not(.eyebrow) {
@@ -1201,10 +1211,10 @@ input:focus,select:focus,textarea:focus {
   padding:27px
 }
 .page-hero h1 {
-  font-size:2.6rem
+  font-size:1.9rem
 }
 .lead {
-  font-size:1rem
+  font-size:.9rem
 }
 .scope-note {
   padding:25px
@@ -1213,7 +1223,7 @@ input:focus,select:focus,textarea:focus {
   font-size:.7rem
 }
 .prose h2 {
-  font-size:1.4rem
+  font-size:1.15rem
 }
 
 }
@@ -1266,7 +1276,7 @@ h3 { font-family:Georgia,'Times New Roman',serif; font-weight:400; letter-spacin
 .hero picture img { object-position:81% center; }
 .hero-shade { display:none; }
 .hero-content { padding-block:80px; }
-.hero h1 { font-size:clamp(3rem,5.2vw,4.7rem); max-width:54%; }
+.hero h1 { font-size:clamp(2.2rem,3.8vw,2.75rem); max-width:54%; }
 .hero .eyebrow { color:var(--clay); }
 .hero-content>p:not(.eyebrow) { max-width:43%; font-size:1rem; line-height:1.85; }
 .hero-actions { max-width:47%; gap:20px; }
@@ -1276,7 +1286,7 @@ h3 { font-family:Georgia,'Times New Roman',serif; font-weight:400; letter-spacin
 .context-bar .container { padding-block:23px; }
 .service-card,.package { background:#fffdf8; border-color:#e0e1d5; }
 .service-card:hover { border-color:#9aa88d; box-shadow:0 12px 32px #35493e08; transform:translateY(-3px); }
-.service-card h3 { font-size:1.8rem; }
+.service-card h3 { font-size:1.35rem; }
 .card-number { width:43px; height:43px; border-radius:50%; display:grid; place-items:center; background:#f0e9df; color:var(--clay); font-size:.8rem; }
 .card-link { border-color:#e2e3d9; }
 .grounded { background:#425443; }
@@ -1303,19 +1313,19 @@ h3 { font-family:Georgia,'Times New Roman',serif; font-weight:400; letter-spacin
 .preview-notice { border-radius:14px; }
 input,select,textarea { background:#fffdf8; border-radius:9px; }
 @media(min-width:1500px) { .hero { min-height:710px; } .hero picture img { object-position:81% center; } }
-@media(max-width:1050px) { .hero h1 { font-size:3.8rem; } .hero picture { width:45%; border-radius:140px 140px 16px 16px; } .hero-content>p:not(.eyebrow) { max-width:47%; } }
-@media(max-width:800px) { .header-inner { min-height:82px; } .hero { min-height:590px; } .hero h1 { font-size:3.3rem; } .hero-actions { flex-direction:column; align-items:start; } .hero picture { width:43%; border-radius:120px 120px 16px 16px; } .hero-content>p:not(.eyebrow) { max-width:49%; } .service-card h3 { font-size:1.5rem; } }
+@media(max-width:1050px) { .hero h1 { font-size:2.4rem; } .hero picture { width:45%; border-radius:140px 140px 16px 16px; } .hero-content>p:not(.eyebrow) { max-width:47%; } }
+@media(max-width:800px) { .header-inner { min-height:82px; } .hero { min-height:590px; } .hero h1 { font-size:2.1rem; } .hero-actions { flex-direction:column; align-items:start; } .hero picture { width:43%; border-radius:120px 120px 16px 16px; } .hero-content>p:not(.eyebrow) { max-width:49%; } .service-card h3 { font-size:1.2rem; } }
 @media(max-width:580px) {
  .hero { min-height:0; display:flex; flex-direction:column; align-items:stretch; }
  .hero-content { order:0; padding:44px 0 34px; }
- .hero h1 { font-size:clamp(2.9rem,12vw,3.8rem); max-width:100%; }
+ .hero h1 { font-size:clamp(2rem,9vw,2.6rem); max-width:100%; }
  .hero-content>p:not(.eyebrow) { max-width:100%; font-size:1rem; }
  .hero-actions { max-width:100%; flex-direction:row; align-items:center; gap:15px 24px; }
  .hero picture { order:1; position:relative; inset:auto; width:calc(100% - 40px); height:330px; margin:0 20px 28px; border-radius:150px 150px 14px 14px; }
  .hero picture img { object-position:85% center; }
  .hero-caption { display:none; }
- .service-card h3 { font-size:1.8rem; }
- .page-hero h1 { font-size:2.8rem; }
+ .service-card h3 { font-size:1.35rem; }
+ .page-hero h1 { font-size:2rem; }
  .page-hero:after { left:20px; }
 }
 
@@ -1368,7 +1378,7 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
 
 /* Contact details and shared floating actions. */
 .contact-details { margin-bottom:36px; }
-.contact-details h2 { font-size:1.65rem; }
+.contact-details h2 { font-size:1.3rem; }
 .contact-details p { margin-bottom:12px; }
 .contact-details .text-link { display:table; margin-bottom:14px; }
 .footer-grid>div>a.footer-email { display:inline-block; margin-top:14px; }
@@ -1521,26 +1531,19 @@ body.lang-th .wordmark { letter-spacing:normal; }
   display:table;
   width:fit-content;
   max-width:100%;
+  letter-spacing:.065em;
+  overflow-wrap:anywhere;
+}
+/* The rounded pill/badge treatment is a hero-only accent; other sections keep
+   a plain tracked-caps label, matching the rest of the page's quieter type. */
+.hero .eyebrow,.page-hero .eyebrow {
   padding:6px 13px;
   border:1px solid var(--accent-border);
   border-radius:999px;
   background:var(--accent-tint);
   color:#81432f;
-  letter-spacing:.065em;
-  overflow-wrap:anywhere;
 }
 .hero .eyebrow { max-width:50%; }
-.grounded .eyebrow {
-  background:#ffffff0d;
-  border-color:#e0bb9466;
-  color:#f2d4b6;
-}
-.service-card .eyebrow,.report .eyebrow {
-  background:#eef0e7;
-  border-color:#d7ddcd;
-  color:#4f6049;
-  width:fit-content;
-}
 .section-heading h2::after,.split>div>h2::after,.faq-layout>div>h2::after {
   content:'';
   display:block;

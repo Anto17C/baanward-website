@@ -1,7 +1,9 @@
 'use strict';
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
-const servicesMenu = document.querySelector('.services-menu');
+// The header can hold more than one nav dropdown (Services, Coverage Areas, ...),
+// so these handle every .services-menu element, not just the first.
+const navDropdowns = [...document.querySelectorAll('.services-menu')];
 menuButton?.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') !== 'true';
   menuButton.setAttribute('aria-expanded', String(open));
@@ -9,9 +11,10 @@ menuButton?.addEventListener('click', () => {
 });
 document.addEventListener('keydown', (event) => {
   if (event.key !== 'Escape') return;
-  if (servicesMenu?.open) {
-    servicesMenu.open = false;
-    servicesMenu.querySelector('summary').focus();
+  const openMenu = navDropdowns.find(menu => menu.open);
+  if (openMenu) {
+    openMenu.open = false;
+    openMenu.querySelector('summary').focus();
   } else if (navigation?.classList.contains('open')) {
     navigation.classList.remove('open');
     menuButton.setAttribute('aria-expanded', 'false');
@@ -19,7 +22,9 @@ document.addEventListener('keydown', (event) => {
   }
 });
 document.addEventListener('click', (event) => {
-  if (servicesMenu?.open && !servicesMenu.contains(event.target)) servicesMenu.open = false;
+  navDropdowns.forEach(menu => {
+    if (menu.open && !menu.contains(event.target)) menu.open = false;
+  });
 });
 const form = document.querySelector('#inquiry-form');
 if (form) {
