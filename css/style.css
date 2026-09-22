@@ -1452,6 +1452,8 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
 .channel-line { color:#06c755; }
 .channel-line img { border-radius:5px; }
 .footer-channels { margin-top:18px; }
+.footer-channels .channel-link { width:31px; height:31px; flex:0 0 31px; }
+.footer-channels .channel-link svg,.footer-channels .channel-link img { width:17px; height:17px; }
 .page-hero { padding-top:56px; padding-bottom:36px; }
 .hero-content { padding-bottom:20px; }
 @media(max-width:800px) { .page-hero { padding-top:39px; padding-bottom:21px; } }
@@ -1479,7 +1481,7 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
 @media(max-width:580px) { .hero-content { padding-top:44px; padding-bottom:34px; } }
 
 /* Optical sizing for the footer WhatsApp artwork. */
-.footer-channels .channel-whatsapp svg { width:27px; height:27px; }
+.footer-channels .channel-whatsapp svg { width:19px; height:19px; }
 
 /* Optical sizing for WhatsApp in the slim contact bar. */
 .header-channels .channel-whatsapp svg { width:22px; height:22px; }
