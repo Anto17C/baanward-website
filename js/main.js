@@ -1,34 +1,60 @@
 'use strict';
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
-// Services and Coverage Areas are real links with a hover-opening dropdown (desktop).
-// On mobile, hover doesn't apply, so opening the menu expands every dropdown at once,
-// and tapping a caret toggles just that one—matching the rest of the menu being visible.
 const navItems = [...document.querySelectorAll('.nav-item')];
-const MOBILE_QUERY = '(max-width: 980px)';
-menuButton?.addEventListener('click', () => {
-  const open = menuButton.getAttribute('aria-expanded') !== 'true';
-  menuButton.setAttribute('aria-expanded', String(open));
-  navigation.classList.toggle('open', open);
-  navItems.forEach(item => item.classList.toggle('mobile-open', open));
+const mobileNavigation = window.matchMedia('(max-width: 980px)');
+function setSubmenu(item, open) {
+  item.classList.toggle('submenu-open', open);
+  item.querySelector('.nav-toggle')?.setAttribute('aria-expanded', String(open));
+}
+function setMenu(open) {
+  menuButton?.setAttribute('aria-expanded', String(open));
+  navigation?.classList.toggle('open', open);
+  navItems.forEach(item => setSubmenu(item, open && mobileNavigation.matches));
+}
+menuButton?.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));
+navItems.forEach(item => {
+  const toggle = item.querySelector('.nav-toggle');
+  toggle?.addEventListener('click', () => setSubmenu(item, toggle.getAttribute('aria-expanded') !== 'true'));
+  item.addEventListener('mouseenter', () => { if (!mobileNavigation.matches) setSubmenu(item, true); });
+  item.addEventListener('mouseleave', () => { if (!mobileNavigation.matches && !item.contains(document.activeElement)) setSubmenu(item, false); });
+  item.addEventListener('focusin', event => {
+    if (!mobileNavigation.matches && event.target === item.querySelector('a')) setSubmenu(item, true);
+  });
+  item.addEventListener('focusout', event => {
+    if (!mobileNavigation.matches && !item.contains(event.relatedTarget)) setSubmenu(item, false);
+  });
 });
-document.addEventListener('keydown', (event) => {
+document.addEventListener('keydown', event => {
   if (event.key !== 'Escape') return;
-  if (navigation?.classList.contains('open')) {
-    navigation.classList.remove('open');
-    navItems.forEach(item => item.classList.remove('mobile-open'));
-    menuButton.setAttribute('aria-expanded', 'false');
+  if (mobileNavigation.matches && navigation?.classList.contains('open')) {
+    setMenu(false);
     menuButton.focus();
+  } else {
+    const item = navItems.find(item => item.classList.contains('submenu-open') && item.contains(document.activeElement));
+    if (item) {
+      setSubmenu(item, false);
+      item.querySelector('.nav-toggle').focus();
+    }
   }
 });
-navItems.forEach(item => {
-  const caret = item.querySelector('.caret');
-  caret?.addEventListener('click', (event) => {
-    if (!window.matchMedia(MOBILE_QUERY).matches) return;
-    event.preventDefault();
-    event.stopPropagation();
-    item.classList.toggle('mobile-open');
-  });
+mobileNavigation.addEventListener('change', () => setMenu(false));
+
+// Preserve the visitor's chosen city and service through service and language links.
+const inquiryContext = new URLSearchParams(location.search);
+const validServices = ['buyer-support','remote-property-oversight','owner-care'];
+const pageService = location.pathname.split('/').pop().replace(/\.html$/, '');
+const selectedService = validServices.includes(pageService) ? pageService : inquiryContext.get('service');
+const selectedCity = inquiryContext.get('location');
+document.querySelectorAll('a[href]').forEach(link => {
+  const target = new URL(link.getAttribute('href'), location.href);
+  if (target.origin !== location.origin) return;
+  const isContact = /\/contact(?:\.html)?$/.test(target.pathname);
+  const isLanguage = Boolean(link.closest('.lang-switch'));
+  if (!isContact && !isLanguage) return;
+  if (selectedCity && selectedCity.length <= 120) target.searchParams.set('location', selectedCity);
+  if (validServices.includes(selectedService)) target.searchParams.set('service', selectedService);
+  if (target.search) link.setAttribute('href', target.pathname + target.search + target.hash);
 });
 const form = document.querySelector('#inquiry-form');
 if (form) {

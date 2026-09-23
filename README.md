@@ -1,6 +1,6 @@
 # Baanward website
 
-Directly editable English HTML, with shared CSS and JavaScript. No build step or framework is required. The public site lives directly in the repository root, matching the other website projects. Edit the HTML pages directly; shared navigation and footer markup are intentionally present in every page and must be kept consistent. Styles: `css/style.css`. Behaviour: `js/main.js`.
+Directly editable English, French, German and Thai HTML, with shared CSS and JavaScript. No build step or framework is required. The public site lives directly in the repository root, matching the other website projects. Edit the HTML pages directly; shared navigation and footer markup are intentionally present in every page and must be kept consistent. Styles: `css/style.css`. Behaviour: `js/main.js`.
 
 Serve the repository root with a local static web server to preview. For conventional static hosting, use no build command and the repository root as the public directory. Configure the host to exclude repository metadata and documentation from public delivery.
 
@@ -27,26 +27,26 @@ The contact form uses the supplied public Web3Forms access key, with `https://ap
 
 The form validates required fields and URL schemes, includes a honeypot, prevents duplicate in-flight submissions, and requires both a successful HTTP response and `success: true`. Failed, malformed or timed-out responses retain details. The submit button stays disabled without JavaScript. No listing URLs are fetched and no uploads are collected.
 
-The content security policy permits connections to Web3Forms. Verify the chosen host applies `_headers`; a basic local server does not apply it automatically. The user confirmed receipt of a real inquiry email on 17 September 2026. Delivery-testing labels have been removed; the form now uses customer-facing confirmation text. The reply-to address was not separately confirmed. The operator, privacy contact, team access and default inquiry-retention policy are confirmed in privacy.html. The website remains noindex.
+The content security policy permits connections to Web3Forms. Verify the chosen host applies `_headers`; a basic local server does not apply it automatically. The user confirmed receipt of a real inquiry email on 17 September 2026. Delivery-testing labels have been removed; the form now uses customer-facing confirmation text. The reply-to address was not separately confirmed. The operator, privacy contact, team access and default inquiry-retention policy are confirmed in privacy.html. The public website is indexable; only the four 404 pages retain noindex.
 
 The user handles all commits and pushes manually; this integration does not update the hosted preview automatically.
 
-The review is intentionally excluded from indexing through page metadata and robots.txt. After public launch approval, replace those directives, confirm the domain, then add correct canonical URLs and a sitemap. No domain, DNS or contact destination is assumed. Prices remain scoped quotes.
+The public domain is https://baanward.com. Sitemap and canonical/hreflang links use Cloudflare’s extensionless URLs. Keep the 80 indexable URLs and language alternates in sync when adding pages.
 
 ## Assets and maintenance
 
-Original AI-generated residential imagery is illustrative. Optimised WebP desktop and mobile assets are in `images/`. Inter is hosted locally in `fonts/` with its SIL Open Font License. There are no analytics, tracking integrations, external fonts, uploads, payments or client portal.
+Original AI-generated residential imagery is illustrative. Optimised WebP desktop and mobile assets are in `images/`. Inter is hosted locally in `fonts/` with its SIL Open Font License. Google Analytics 4 (G-FSNP6YPYZH) is installed through GTM-TNX8TL47. The existing GTM head and noscript snippets are present on all 84 pages and load without an added website consent gate. There are no external fonts, uploads, payments or client portal.
 
 Keep research, rules, draft images, screenshots and QA evidence outside this repository under the user's corresponding project folders. Include only site source, final assets and necessary repository/hosting configuration here. Do not commit private inquiry material or secrets.
 
 
 ## Business contacts
 
-Operator: Baanward Co.LTD. Public inquiry and privacy email: contact@baanward.com. English pages use WhatsApp +66 90 324 7862 (https://wa.me/66903247862), confirmed from Haven Siam at the user's request. The shared floating WhatsApp link does not load a third-party widget. Back-to-top appears after scrolling 500 pixels and respects reduced-motion preferences. LINE is reserved for the future Thai version; do not display it on the English site. Up to three authorised team members may read inquiries. The default is to retain correspondence unless deletion is requested, subject to applicable legal retention/deletion requirements. Domain ownership and public indexing remain separate confirmations.
+Operator: Baanward Co.LTD. Public inquiry and privacy email: contact@baanward.com. English pages use WhatsApp +66 90 324 7862 (https://wa.me/66903247862), confirmed from Haven Siam at the user's request. The shared floating WhatsApp link does not load a third-party widget. Back-to-top appears after scrolling 500 pixels and respects reduced-motion preferences. EN/FR use WhatsApp +66 90 324 7862 and LINE https://line.me/ti/p/ZmLjFAgyNh. DE/TH use WhatsApp +66 84 388 2857 and LINE https://line.me/ti/p/gId0k4nzQ_. These different partner destinations are intentional. Up to three authorised team members may read inquiries. The default is to retain correspondence unless deletion is requested, subject to applicable legal retention/deletion requirements. The domain is registered with Cloudflare and the site is public.
 
 Legal referrals are described publicly as “our Thai legal counsel or legal partner”, with permission, conflict checks and separate engagement preserved. Do not name a particular law firm in public website copy.
 
 
 ## Page organisation
 
-The main menu includes Home, Services, How we work, About and FAQs. FAQs live in `faqs.html`; maintain answers there. The homepage focuses on the service overview, customer situations and practical deliverables. Detailed process steps, the sample report and specialist responsibilities remain on `how-we-work.html`, with legal/technical responsibilities also explained on About. Keep shared navigation and footer links consistent across all ten HTML pages.
+The main menu is Home, About, Services, Coverage Areas, FAQs, How we work. Services and Coverage Areas have linked landing pages and separate accessible submenu buttons. FAQs live in `faqs.html`; maintain answers there. The homepage focuses on the service overview, customer situations and practical deliverables. Detailed process steps, the sample report and specialist responsibilities remain on `how-we-work.html`, with legal/technical responsibilities also explained on About. Keep shared navigation and footer links consistent across all 84 HTML pages (21 per language, including one 404 per language). There are nine city pages per language: five core coverage areas (Pattaya, Rayong, Chonburi, Bangkok, Nonthaburi) and four nationwide coordination areas (Phuket, Hua Hin, Chiang Mai, Koh Samui).

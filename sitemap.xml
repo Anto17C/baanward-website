@@ -2,563 +2,643 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://baanward.com/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/index.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/index.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/index.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/index.html"/>
+    <loc>https://baanward.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/th/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/about"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/about"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/fr/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/about"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/about"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/de/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/about"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/about"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/th/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/about"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/about"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/services"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/services"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/services"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/fr/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/services"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/services"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/services"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/de/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/services"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/services"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/services"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/th/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/services"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/services"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/services"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/buyer-support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/buyer-support"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/index.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/index.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/index.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/index.html"/>
+    <loc>https://baanward.com/fr/buyer-support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/buyer-support"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/index.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/index.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/index.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/index.html"/>
+    <loc>https://baanward.com/de/buyer-support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/buyer-support"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/index.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/index.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/index.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/index.html"/>
+    <loc>https://baanward.com/th/buyer-support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/buyer-support"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/buyer-support"/>
   </url>
   <url>
-    <loc>https://baanward.com/about.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/about.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/about.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/about.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/about.html"/>
+    <loc>https://baanward.com/remote-property-oversight</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/remote-property-oversight"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/about.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/about.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/about.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/about.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/about.html"/>
+    <loc>https://baanward.com/fr/remote-property-oversight</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/remote-property-oversight"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/about.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/about.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/about.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/about.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/about.html"/>
+    <loc>https://baanward.com/de/remote-property-oversight</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/remote-property-oversight"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/about.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/about.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/about.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/about.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/about.html"/>
+    <loc>https://baanward.com/th/remote-property-oversight</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/remote-property-oversight"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/remote-property-oversight"/>
   </url>
   <url>
-    <loc>https://baanward.com/services.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/services.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/services.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/services.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/services.html"/>
+    <loc>https://baanward.com/owner-care</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/owner-care"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/services.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/services.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/services.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/services.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/services.html"/>
+    <loc>https://baanward.com/fr/owner-care</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/owner-care"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/services.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/services.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/services.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/services.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/services.html"/>
+    <loc>https://baanward.com/de/owner-care</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/owner-care"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/services.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/services.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/services.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/services.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/services.html"/>
+    <loc>https://baanward.com/th/owner-care</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/owner-care"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/owner-care"/>
   </url>
   <url>
-    <loc>https://baanward.com/buyer-support.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/buyer-support.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/buyer-support.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/buyer-support.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/buyer-support.html"/>
+    <loc>https://baanward.com/how-we-work</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/how-we-work"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/buyer-support.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/buyer-support.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/buyer-support.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/buyer-support.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/buyer-support.html"/>
+    <loc>https://baanward.com/fr/how-we-work</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/how-we-work"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/buyer-support.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/buyer-support.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/buyer-support.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/buyer-support.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/buyer-support.html"/>
+    <loc>https://baanward.com/de/how-we-work</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/how-we-work"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/buyer-support.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/buyer-support.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/buyer-support.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/buyer-support.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/buyer-support.html"/>
+    <loc>https://baanward.com/th/how-we-work</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/how-we-work"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/how-we-work"/>
   </url>
   <url>
-    <loc>https://baanward.com/remote-property-oversight.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/remote-property-oversight.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/remote-property-oversight.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/remote-property-oversight.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/remote-property-oversight.html"/>
+    <loc>https://baanward.com/faqs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/faqs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/faqs"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/faqs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/faqs"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/faqs"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/remote-property-oversight.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/remote-property-oversight.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/remote-property-oversight.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/remote-property-oversight.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/remote-property-oversight.html"/>
+    <loc>https://baanward.com/fr/faqs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/faqs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/faqs"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/faqs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/faqs"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/faqs"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/remote-property-oversight.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/remote-property-oversight.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/remote-property-oversight.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/remote-property-oversight.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/remote-property-oversight.html"/>
+    <loc>https://baanward.com/de/faqs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/faqs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/faqs"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/faqs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/faqs"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/faqs"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/remote-property-oversight.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/remote-property-oversight.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/remote-property-oversight.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/remote-property-oversight.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/remote-property-oversight.html"/>
+    <loc>https://baanward.com/th/faqs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/faqs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/faqs"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/faqs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/faqs"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/faqs"/>
   </url>
   <url>
-    <loc>https://baanward.com/owner-care.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/owner-care.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/owner-care.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/owner-care.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/owner-care.html"/>
+    <loc>https://baanward.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/contact"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/owner-care.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/owner-care.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/owner-care.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/owner-care.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/owner-care.html"/>
+    <loc>https://baanward.com/fr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/contact"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/owner-care.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/owner-care.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/owner-care.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/owner-care.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/owner-care.html"/>
+    <loc>https://baanward.com/de/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/contact"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/owner-care.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/owner-care.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/owner-care.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/owner-care.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/owner-care.html"/>
+    <loc>https://baanward.com/th/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/contact"/>
   </url>
   <url>
-    <loc>https://baanward.com/how-we-work.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/how-we-work.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/how-we-work.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/how-we-work.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/how-we-work.html"/>
+    <loc>https://baanward.com/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/privacy"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/how-we-work.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/how-we-work.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/how-we-work.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/how-we-work.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/how-we-work.html"/>
+    <loc>https://baanward.com/fr/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/privacy"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/how-we-work.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/how-we-work.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/how-we-work.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/how-we-work.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/how-we-work.html"/>
+    <loc>https://baanward.com/de/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/privacy"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/how-we-work.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/how-we-work.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/how-we-work.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/how-we-work.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/how-we-work.html"/>
+    <loc>https://baanward.com/th/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/privacy"/>
   </url>
   <url>
-    <loc>https://baanward.com/faqs.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/faqs.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/faqs.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/faqs.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/faqs.html"/>
+    <loc>https://baanward.com/locations</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/faqs.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/faqs.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/faqs.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/faqs.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/faqs.html"/>
+    <loc>https://baanward.com/fr/locations</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/faqs.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/faqs.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/faqs.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/faqs.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/faqs.html"/>
+    <loc>https://baanward.com/de/locations</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/faqs.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/faqs.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/faqs.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/faqs.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/faqs.html"/>
+    <loc>https://baanward.com/th/locations</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations"/>
   </url>
   <url>
-    <loc>https://baanward.com/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/contact.html"/>
+    <loc>https://baanward.com/locations/pattaya</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/pattaya"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/contact.html"/>
+    <loc>https://baanward.com/fr/locations/pattaya</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/pattaya"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/contact.html"/>
+    <loc>https://baanward.com/de/locations/pattaya</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/pattaya"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/contact.html"/>
+    <loc>https://baanward.com/th/locations/pattaya</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/pattaya"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/pattaya"/>
   </url>
   <url>
-    <loc>https://baanward.com/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/privacy.html"/>
+    <loc>https://baanward.com/locations/rayong</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/rayong"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/privacy.html"/>
+    <loc>https://baanward.com/fr/locations/rayong</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/rayong"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/privacy.html"/>
+    <loc>https://baanward.com/de/locations/rayong</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/rayong"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/privacy.html"/>
+    <loc>https://baanward.com/th/locations/rayong</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/rayong"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/rayong"/>
   </url>
   <url>
-    <loc>https://baanward.com/locations.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations.html"/>
+    <loc>https://baanward.com/locations/chonburi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chonburi"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/locations.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations.html"/>
+    <loc>https://baanward.com/fr/locations/chonburi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chonburi"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/locations.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations.html"/>
+    <loc>https://baanward.com/de/locations/chonburi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chonburi"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/locations.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations.html"/>
+    <loc>https://baanward.com/th/locations/chonburi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chonburi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chonburi"/>
   </url>
   <url>
-    <loc>https://baanward.com/locations/pattaya.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/pattaya.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/pattaya.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/pattaya.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/pattaya.html"/>
+    <loc>https://baanward.com/locations/bangkok</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/bangkok"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/locations/pattaya.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/pattaya.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/pattaya.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/pattaya.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/pattaya.html"/>
+    <loc>https://baanward.com/fr/locations/bangkok</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/bangkok"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/locations/pattaya.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/pattaya.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/pattaya.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/pattaya.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/pattaya.html"/>
+    <loc>https://baanward.com/de/locations/bangkok</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/bangkok"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/locations/pattaya.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/pattaya.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/pattaya.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/pattaya.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/pattaya.html"/>
+    <loc>https://baanward.com/th/locations/bangkok</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/bangkok"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/bangkok"/>
   </url>
   <url>
-    <loc>https://baanward.com/locations/rayong.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/rayong.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/rayong.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/rayong.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/rayong.html"/>
+    <loc>https://baanward.com/locations/nonthaburi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/nonthaburi"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/locations/rayong.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/rayong.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/rayong.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/rayong.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/rayong.html"/>
+    <loc>https://baanward.com/fr/locations/nonthaburi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/nonthaburi"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/locations/rayong.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/rayong.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/rayong.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/rayong.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/rayong.html"/>
+    <loc>https://baanward.com/de/locations/nonthaburi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/nonthaburi"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/locations/rayong.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/rayong.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/rayong.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/rayong.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/rayong.html"/>
+    <loc>https://baanward.com/th/locations/nonthaburi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/nonthaburi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/nonthaburi"/>
   </url>
   <url>
-    <loc>https://baanward.com/locations/chonburi.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chonburi.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chonburi.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chonburi.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chonburi.html"/>
+    <loc>https://baanward.com/locations/phuket</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/phuket"/>
   </url>
   <url>
-    <loc>https://baanward.com/fr/locations/chonburi.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chonburi.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chonburi.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chonburi.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chonburi.html"/>
+    <loc>https://baanward.com/fr/locations/phuket</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/phuket"/>
   </url>
   <url>
-    <loc>https://baanward.com/de/locations/chonburi.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chonburi.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chonburi.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chonburi.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chonburi.html"/>
+    <loc>https://baanward.com/de/locations/phuket</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/phuket"/>
   </url>
   <url>
-    <loc>https://baanward.com/th/locations/chonburi.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chonburi.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chonburi.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chonburi.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chonburi.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/locations/bangkok.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/bangkok.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/bangkok.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/bangkok.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/bangkok.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/fr/locations/bangkok.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/bangkok.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/bangkok.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/bangkok.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/bangkok.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/de/locations/bangkok.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/bangkok.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/bangkok.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/bangkok.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/bangkok.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/th/locations/bangkok.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/bangkok.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/bangkok.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/bangkok.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/bangkok.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/locations/nonthaburi.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/nonthaburi.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/nonthaburi.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/nonthaburi.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/nonthaburi.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/fr/locations/nonthaburi.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/nonthaburi.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/nonthaburi.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/nonthaburi.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/nonthaburi.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/de/locations/nonthaburi.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/nonthaburi.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/nonthaburi.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/nonthaburi.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/nonthaburi.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/th/locations/nonthaburi.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/nonthaburi.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/nonthaburi.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/nonthaburi.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/nonthaburi.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/locations/phuket.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/phuket.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/phuket.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/phuket.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/phuket.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/fr/locations/phuket.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/phuket.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/phuket.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/phuket.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/phuket.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/de/locations/phuket.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/phuket.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/phuket.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/phuket.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/phuket.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/th/locations/phuket.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/phuket.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/phuket.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/phuket.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/phuket.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/locations/hua-hin.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/hua-hin.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/hua-hin.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/hua-hin.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/hua-hin.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/fr/locations/hua-hin.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/hua-hin.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/hua-hin.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/hua-hin.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/hua-hin.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/de/locations/hua-hin.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/hua-hin.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/hua-hin.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/hua-hin.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/hua-hin.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/th/locations/hua-hin.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/hua-hin.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/hua-hin.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/hua-hin.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/hua-hin.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/locations/chiang-mai.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chiang-mai.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chiang-mai.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chiang-mai.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chiang-mai.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/fr/locations/chiang-mai.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chiang-mai.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chiang-mai.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chiang-mai.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chiang-mai.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/de/locations/chiang-mai.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chiang-mai.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chiang-mai.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chiang-mai.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chiang-mai.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/th/locations/chiang-mai.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chiang-mai.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chiang-mai.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chiang-mai.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chiang-mai.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/locations/koh-samui.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/koh-samui.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/koh-samui.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/koh-samui.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/koh-samui.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/fr/locations/koh-samui.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/koh-samui.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/koh-samui.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/koh-samui.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/koh-samui.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/de/locations/koh-samui.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/koh-samui.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/koh-samui.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/koh-samui.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/koh-samui.html"/>
-  </url>
-  <url>
-    <loc>https://baanward.com/th/locations/koh-samui.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/koh-samui.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/koh-samui.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/koh-samui.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/koh-samui.html"/>
+    <loc>https://baanward.com/th/locations/phuket</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/phuket"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/phuket"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/locations/hua-hin</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/hua-hin"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/fr/locations/hua-hin</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/hua-hin"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/de/locations/hua-hin</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/hua-hin"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/th/locations/hua-hin</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/hua-hin"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/hua-hin"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/locations/chiang-mai</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chiang-mai"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/fr/locations/chiang-mai</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chiang-mai"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/de/locations/chiang-mai</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chiang-mai"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/th/locations/chiang-mai</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/chiang-mai"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/chiang-mai"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/locations/koh-samui</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/koh-samui"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/fr/locations/koh-samui</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/koh-samui"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/de/locations/koh-samui</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/koh-samui"/>
+  </url>
+  <url>
+    <loc>https://baanward.com/th/locations/koh-samui</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baanward.com/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baanward.com/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baanward.com/fr/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://baanward.com/de/locations/koh-samui"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://baanward.com/th/locations/koh-samui"/>
   </url>
 </urlset>
