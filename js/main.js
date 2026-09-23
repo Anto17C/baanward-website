@@ -5,6 +5,7 @@ const navItems = [...document.querySelectorAll('.nav-item')];
 const mobileNavigation = window.matchMedia('(max-width: 980px)');
 function setSubmenu(item, open) {
   item.classList.toggle('submenu-open', open);
+  item.classList.toggle('submenu-dismissed', !open && !mobileNavigation.matches);
   item.querySelector('.nav-toggle')?.setAttribute('aria-expanded', String(open));
 }
 function setMenu(open) {

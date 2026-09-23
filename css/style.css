@@ -1673,3 +1673,23 @@ input,select,textarea { background:#fff; }
 @media (max-width:760px) {
   .visual-card .card-copy,.visual-card.package .card-copy { padding:27px 27px 0; }
 }
+
+/* Walailak-style navigation: CSS hover/focus opening and compact dropdown links.
+   Keep desktop menus usable even before JavaScript has loaded. */
+@media(min-width:981px) {
+  .nav-item { column-gap:4px; }
+  .nav-toggle { min-width:24px; padding:0 4px; }
+  .nav-toggle .caret { font-size:10px; }
+  .nav-item .dropdown { display:block; left:-10px; width:max-content; min-width:210px; max-width:290px; padding:8px; z-index:20; border-radius:8px; box-shadow:0 16px 32px #35493e20; }
+  .nav-item .dropdown a { padding:8px 12px; font-size:13px; line-height:1.5; }
+  .nav-item:not(.submenu-dismissed):hover .dropdown,
+  .nav-item:not(.submenu-dismissed):focus-within .dropdown,
+  .nav-item.submenu-open .dropdown { opacity:1; visibility:visible; transform:translateY(0); }
+  .nav-item:not(.submenu-dismissed):hover .caret,
+  .nav-item:not(.submenu-dismissed):focus-within .caret { transform:rotate(180deg); }
+  .nav-item .dropdown a:hover,.nav-item .dropdown a:focus-visible { color:var(--clay); background:var(--soft); }
+}
+@media(max-width:980px) {
+  .nav-item .dropdown { width:auto; margin:2px 0 2px 16px; padding:0 0 0 12px; border:0; border-left:1px solid var(--line); border-radius:0; background:transparent; box-shadow:none; }
+  .nav-item .dropdown a { padding:8px 0; font-size:.85rem; }
+}
