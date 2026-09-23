@@ -2,7 +2,7 @@
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
 const navItems = [...document.querySelectorAll('.nav-item')];
-const mobileNavigation = window.matchMedia('(max-width: 980px)');
+const mobileNavigation = window.matchMedia('(max-width: 1100px)');
 function setSubmenu(item, open) {
   item.classList.toggle('submenu-open', open);
   item.classList.toggle('submenu-dismissed', !open && !mobileNavigation.matches);
