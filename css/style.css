@@ -2232,3 +2232,11 @@ input,select,textarea { background:#fff; }
 @media(max-width:1000px) { .ab-quad { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:620px) { .ab-quad,.ab-checks { grid-template-columns:1fr; } }
 @media(prefers-reduced-motion:reduce) { .ab-checks li,.ab-near .related-locations a { transition:none; } .ab-checks li:hover,.ab-near .related-locations a:hover { transform:none; } }
+
+/* Location pages, horizontal: checklist row and intro callout. */
+.ct-intro .ab-note { margin-top:26px; max-width:none; }
+.ab-checks.ab-checks-row { grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+.ab-checks-row li { grid-template-columns:1fr; gap:14px; padding:22px 22px 24px; border-radius:20px; }
+.ab-checks-row li::before { width:34px; height:34px; font-size:1rem; }
+@media(max-width:1000px) { .ab-checks.ab-checks-row { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:620px) { .ab-checks.ab-checks-row { grid-template-columns:1fr; } }
