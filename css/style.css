@@ -2306,11 +2306,3 @@ input,select,textarea { background:#fff; }
   .closing .closing-inner h2 br { display:none; }
   .closing-inner { gap:24px; }
 }
-
-/* Buyer Support: developer research and existing team side by side. */
-.sv-pair .ab-card { padding:36px 36px 34px; }
-.sv-pair .ab-card .eyebrow { margin:0 0 14px; }
-.sv-pair .ab-card h2 { margin:0 0 14px; font-size:1.55rem; line-height:1.25; color:var(--forest); }
-.sv-pair .ab-card h2::after { content:''; display:block; width:44px; height:3px; margin:16px 0 0; border-radius:999px; background:var(--clay); }
-.ab-card .ab-note { margin-top:18px; padding:14px 18px; border-radius:0 12px 12px 0; background:#f3f2ea; font-size:.86rem; line-height:1.65; }
-.sv-pair .ab-card p.eyebrow { color:var(--clay); font-size:.75rem; font-weight:700; letter-spacing:.14em; line-height:1.4; margin:0 0 14px; }
