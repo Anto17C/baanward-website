@@ -2275,3 +2275,17 @@ input,select,textarea { background:#fff; }
 .visual-card.package .card-copy { flex-direction:row; flex-wrap:wrap; align-items:center; align-content:flex-start; }
 .visual-card.package .card-copy>*:not(.card-number):not(.eyebrow) { flex:0 0 100%; }
 .visual-card.package .card-copy .text-link { flex:0 0 auto; margin-top:6px; }
+
+/* About coverage: paragraph centred over the chip row. */
+.ab-cover-grid>div:last-child { text-align:center; }
+.ab-cover-grid>div:last-child .ab-chips { justify-content:center; }
+@media(max-width:900px) { .ab-cover-grid>div:last-child { text-align:left; } .ab-cover-grid>div:last-child .ab-chips { justify-content:flex-start; } }
+
+/* Closing band contact: labelled 2 x 2 tiles. */
+.closing-channels { display:grid; grid-template-columns:repeat(2,auto); gap:10px; }
+.closing-channels .channel-link { width:auto; height:48px; flex:none; justify-content:flex-start; gap:10px; padding:0 20px 0 14px; border-radius:999px; white-space:nowrap; }
+.closing-channels .channel-link svg,.closing-channels .channel-link img { width:22px; height:22px; flex:none; }
+.closing-channels .channel-whatsapp svg { width:24px; height:24px; }
+.closing-channels .channel-text { color:var(--forest); font-size:.86rem; font-weight:600; }
+.closing-channels .channel-link:hover { border-color:var(--forest); background:#fff; box-shadow:0 10px 20px -14px rgba(28,48,38,.6); }
+@media(max-width:420px) { .closing-channels { grid-template-columns:1fr; } }
