@@ -2080,3 +2080,14 @@ input,select,textarea { background:#fff; }
 .footer-locations a:not(:last-child)::after { color:rgba(240,216,172,.45); }
 .footer-channels .channel-link { border-color:transparent; }
 .site-footer :focus-visible { outline-color:var(--gold-light); }
+
+/* Closing band: clay-to-gold rule, house watermark and the four contact icons. */
+.closing { position:relative; overflow:hidden; isolation:isolate; }
+.closing::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg,var(--clay),var(--gold)); }
+.closing::after { content:''; position:absolute; z-index:-1; right:max(-40px,calc((100% - 1200px)/2 - 60px)); top:50%; width:340px; height:340px; transform:translateY(-50%); opacity:.6; pointer-events:none; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200' fill='none' stroke='%23c9d3b9' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M20 100 100 30l80 70'/%3E%3Cpath d='M40 90v80h120V90'/%3E%3Cpath d='M85 170v-45h30v45'/%3E%3Ccircle cx='100' cy='92' r='3' fill='%23c9d3b9'/%3E%3C/svg%3E") center/contain no-repeat; }
+.closing-actions { display:flex; flex-direction:column; align-items:flex-end; gap:22px; }
+.closing-channels { display:flex; gap:12px; margin:0; }
+.closing-channels .channel-link { width:52px; height:52px; flex:0 0 52px; border-color:#cdd6bf; background:#fffdf8; }
+.closing-channels .channel-link svg,.closing-channels .channel-link img { width:26px; height:26px; }
+.closing-channels .channel-whatsapp svg { width:30px; height:30px; }
+@media(max-width:800px) { .closing-actions { align-items:flex-start; } .closing::after { opacity:.35; right:-90px; } }
