@@ -2146,3 +2146,14 @@ input,select,textarea { background:#fff; }
   .ab-card::before { left:26px; }
 }
 @media(prefers-reduced-motion:reduce) { .ab-card,.ab-glass,.ab-chips a { transition:none; } .ab-card:hover,.ab-glass:hover,.ab-chips a:hover { transform:none; } }
+
+/* Closing band: equal space either side of the contact icons. */
+.closing-inner { display:flex; align-items:center; justify-content:space-between; gap:32px; }
+.closing-inner>.button,.closing-channels { flex:none; }
+@media(max-width:900px) { .closing-inner { flex-direction:column; align-items:flex-start; gap:26px; } }
+
+/* About coverage chips stay on one row on desktop. */
+.ab-cover-grid { grid-template-columns:minmax(0,4fr) minmax(0,8fr); gap:48px; }
+@media(min-width:901px) { .ab-chips { flex-wrap:nowrap; gap:8px; } .ab-chips a { padding:9px 15px; font-size:.85rem; white-space:nowrap; } }
+@media(max-width:900px) { .ab-cover-grid { grid-template-columns:1fr; gap:34px; } }
+@media(min-width:901px) and (max-width:1150px) { .ab-chips { gap:6px; } .ab-chips a { padding:8px 11px; font-size:.78rem; } .ab-cover-grid { gap:32px; } }
