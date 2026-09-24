@@ -2240,3 +2240,38 @@ input,select,textarea { background:#fff; }
 .ab-checks-row li::before { width:34px; height:34px; font-size:1rem; }
 @media(max-width:1000px) { .ab-checks.ab-checks-row { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:620px) { .ab-checks.ab-checks-row { grid-template-columns:1fr; } }
+
+/* Service pages: horizontal package bands, lead bands, due-diligence timeline. */
+.package-grid { grid-template-columns:1fr; gap:22px; }
+.visual-card.package { position:relative; display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); grid-template-areas:'media copy'; padding:0; border:1px solid var(--line); border-radius:24px; overflow:hidden; background:#fffdf8; box-shadow:0 22px 44px -34px rgba(28,48,38,.5); }
+.visual-card.package:nth-child(even) { grid-template-columns:minmax(0,7fr) minmax(0,5fr); grid-template-areas:'copy media'; }
+.visual-card.package .card-media { grid-area:media; position:relative; margin:0; aspect-ratio:auto; min-height:340px; mask-image:none; -webkit-mask-image:none; }
+.visual-card.package .card-media img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .9s cubic-bezier(.2,.7,.2,1); }
+.visual-card.package:hover .card-media img { transform:scale(1.05); }
+.visual-card.package .card-media::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,rgba(9,22,15,0) 55%,rgba(9,22,15,.45)); }
+.visual-card.package .card-copy { grid-area:copy; padding:38px 40px 34px; }
+.package .card-number { display:inline-grid; margin:0 12px 0 0; width:38px; height:38px; vertical-align:middle; }
+.package .card-copy .eyebrow { display:inline-block; margin:0; vertical-align:middle; }
+.package .card-copy h3 { margin:20px 0 10px; font-size:1.55rem; line-height:1.25; }
+.package .card-copy>p:not(.eyebrow) { margin:0 0 12px; max-width:62ch; }
+.package .check-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 16px; margin:18px 0 22px; }
+.package .check-list li { margin:0; padding:14px 16px 14px 42px; border:0; border-radius:14px; background:#f3f2ea; font-size:.88rem; line-height:1.55; }
+.package .check-list li::before { left:15px; top:14px; }
+.package .text-link { margin-top:auto; }
+
+.sv-band { background:#faf8f2; }
+.sv-band.soft { background:#f0eee7; }
+.sv-band .ab-note,.sv-dd .ab-note { margin-top:26px; }
+.sv-dd .process-steps { margin-top:6px; }
+.sv-dd .process-steps p { color:var(--ink); font-size:.95rem; }
+.ct-clear .ab-glass p { font-size:1.02rem; }
+@media(max-width:900px) {
+  .visual-card.package,.visual-card.package:nth-child(even) { grid-template-columns:1fr; grid-template-areas:'media' 'copy'; }
+  .visual-card.package .card-media { min-height:220px; }
+  .visual-card.package .card-copy { padding:28px 24px 26px; }
+  .package .check-list { grid-template-columns:1fr; }
+}
+@media(prefers-reduced-motion:reduce) { .visual-card.package .card-media img { transition:none; } .visual-card.package:hover .card-media img { transform:none; } }
+.visual-card.package .card-copy { flex-direction:row; flex-wrap:wrap; align-items:center; align-content:flex-start; }
+.visual-card.package .card-copy>*:not(.card-number):not(.eyebrow) { flex:0 0 100%; }
+.visual-card.package .card-copy .text-link { flex:0 0 auto; margin-top:6px; }
