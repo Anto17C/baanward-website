@@ -1515,9 +1515,6 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
   .ticker-toggle,.ticker-copy { display:none; }
 }
 
-/* Language switcher: shows the languages you are not currently reading. */
-.lang-switch { display:flex; align-items:center; gap:14px; font-size:.85rem; font-weight:600; }
-.lang-switch a:hover { color:var(--clay); }
 
 /* Sticky LINE action for Thai pages, sized to match the shared WhatsApp button. */
 .sticky-line { bottom:calc(88px + env(safe-area-inset-bottom, 0px)); width:56px; height:56px; background:#fff; }
@@ -1616,7 +1613,6 @@ body.lang-th .wordmark { letter-spacing:normal; }
 input,select,textarea { background:#fff; }
 .scope-note { border:1px solid var(--line); border-left:3px solid var(--clay); border-radius:12px; }
 .tag,.status { border-radius:999px; }
-.lang-switch a { padding:6px 0; }
 @media(max-width:580px) {
   .hero .eyebrow { max-width:100%; }
   .eyebrow { font-size:.68rem; letter-spacing:.045em; }
@@ -1802,7 +1798,6 @@ input,select,textarea { background:#fff; }
   .due-diligence-details { padding:22px; }
 }
 
-.current-language { font-weight:650; color:var(--forest); }
 
 @media(max-width:580px) {
 
@@ -1885,4 +1880,22 @@ input,select,textarea { background:#fff; }
   letter-spacing:.08em;
   color:var(--ink);
   white-space:nowrap;
+}
+
+/* Language dropdown: the label shows the current language, the list offers the other three. */
+.lang-item { justify-self:start; }
+.lang-item .lang-toggle { display:inline-flex; align-items:center; gap:7px; min-height:40px; padding:0 12px; border:1px solid var(--line); border-radius:22px; font:inherit; font-size:.85rem; font-weight:650; color:var(--forest); cursor:pointer; }
+.lang-item .lang-toggle svg { width:16px; height:16px; flex:none; }
+.lang-item .lang-toggle .caret { font-size:12px; }
+.lang-item .lang-toggle:hover { background:#e9ecdf; }
+.lang-item .lang-toggle:focus-visible { outline:2px solid var(--forest); outline-offset:2px; }
+.lang-item .dropdown a { display:flex; align-items:baseline; justify-content:space-between; gap:20px; white-space:nowrap; }
+.lang-item .lang-code { color:var(--muted); font-size:.72rem; font-weight:650; letter-spacing:.06em; }
+@media(min-width:1101px) {
+  .lang-item .dropdown { left:auto; right:0; min-width:170px; }
+}
+@media(max-width:1100px) {
+  .lang-item { align-self:flex-start; }
+  .lang-item .lang-toggle { justify-self:start; }
+  .lang-item .dropdown { min-width:220px; }
 }

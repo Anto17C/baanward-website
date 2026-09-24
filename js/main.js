@@ -51,7 +51,7 @@ document.querySelectorAll('a[href]').forEach(link => {
   const target = new URL(link.getAttribute('href'), location.href);
   if (target.origin !== location.origin) return;
   const isContact = /\/contact(?:\.html)?$/.test(target.pathname);
-  const isLanguage = Boolean(link.closest('.lang-switch'));
+  const isLanguage = Boolean(link.closest('.lang-item'));
   if (!isContact && !isLanguage) return;
   if (selectedCity && selectedCity.length <= 120) target.searchParams.set('location', selectedCity);
   if (validServices.includes(selectedService)) target.searchParams.set('service', selectedService);
