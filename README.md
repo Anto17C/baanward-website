@@ -50,3 +50,14 @@ Legal referrals are described publicly as “our Thai legal counsel or legal par
 ## Page organisation
 
 The main menu is Home, About, Services, Coverage Areas, FAQs, How we work. Services and Coverage Areas have linked landing pages and separate accessible submenu buttons. FAQs live in `faqs.html`; maintain answers there. The homepage focuses on the service overview, customer situations and practical deliverables. Detailed process steps, the sample report and specialist responsibilities remain on `how-we-work.html`, with legal/technical responsibilities also explained on About. Keep shared navigation and footer links consistent across all 84 HTML pages (21 per language, including one 404 per language). There are nine city pages per language: five core coverage areas (Pattaya, Rayong, Chonburi, Bangkok, Nonthaburi) and four nationwide coordination areas (Phuket, Hua Hin, Chiang Mai, Koh Samui).
+
+
+## English content direction — 24 September 2026
+
+English copy positions Baanward as an independent Thailand property partner for international buyers and owners, before purchase, during purchase and throughout ownership. The user confirmed independence from sellers, developers and selling agents, no seller-side commissions, and availability of developer/project research, translation support, practical contractor supervision and emergency support until 11pm Thailand time. Do not infer a start time or a guaranteed response/attendance time.
+
+The English Services submenu and footer now contain five offers: Property Checks & Research (`buyer-support.html#property-checks`), Due Diligence Coordination (`buyer-support.html#due-diligence`), Purchase & Translation Support (`buyer-support.html#purchase-coordination`), Property Oversight & Contractor Supervision (`remote-property-oversight.html`), and Property Care & Emergency Support (`owner-care.html`). The homepage retains the three broad service families and before/during/after-purchase journey. Existing routes remain in use.
+
+Legal interpretation, legal opinions, title and contract verification remain the appointed legal professional’s work; technical assessments, engineering supervision and certification remain specialist work. Practical contractor supervision and translation support are available. Emergency property support is distinct from public emergency services; attendance, access and costs are confirmed for the situation. The sample report remains fictional.
+
+This content pass updates English only. French, German and Thai are intentionally awaiting the user's separate Claude translation pass. Preserve the language-specific contact destinations and align those translations with the final English source, not older draft copy. Privacy terms, form controls and submission behaviour are unchanged.

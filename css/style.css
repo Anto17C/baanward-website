@@ -1864,3 +1864,19 @@ input,select,textarea { background:#fff; }
     background:linear-gradient(90deg,rgba(16,32,24,.96),rgba(16,32,24,.84) 65%,rgba(16,32,24,.6));
   }
 }
+
+/* Keep the existing logo and menu height; use the space beneath the wordmark. */
+.site-header .brand-tagline {
+  position:absolute;
+  top:calc(100% - 2px);
+  left:0;
+  width:100%;
+  text-align:center;
+  font-family:Inter,sans-serif;
+  font-size:5.5px;
+  font-weight:500;
+  line-height:1.5;
+  letter-spacing:.08em;
+  color:var(--ink);
+  white-space:nowrap;
+}
