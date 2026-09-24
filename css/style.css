@@ -1970,7 +1970,7 @@ input,select,textarea { background:#fff; }
 .grounded.due-diligence-section .split>div>p,.grounded.due-diligence-section p { color:var(--muted); }
 
 /* Homepage "questions that matter": four question-and-answer cards that fill with forest green on hover. */
-.qa-intro { max-width:420px; }
+.qa-intro { max-width:600px; }
 .qa-intro p { color:var(--muted); margin-bottom:14px; }
 .qa-grid { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
 .qa-card { position:relative; display:flex; flex-direction:column; padding:28px 24px 26px; background:#fffdf8; border:1px solid var(--line); border-radius:18px; overflow:hidden; transition:transform .3s ease,background .3s ease,border-color .3s ease,box-shadow .3s ease; }
