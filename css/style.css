@@ -1907,3 +1907,27 @@ input,select,textarea { background:#fff; }
   .premium-home .hero h1 { font-size:32px; line-height:1.2; }
   .lang-th.premium-home .hero h1 { font-size:30px; line-height:1.35; }
 }
+
+/* Hero eyebrow as a pill badge, following the Walailaklaw location tag. */
+.premium-home .hero .eyebrow,
+.page-hero .eyebrow {
+  display:inline-flex;
+  align-items:center;
+  width:auto;
+  max-width:100%;
+  padding:5px 12px;
+  border:1px solid rgba(240,216,172,.42);
+  border-radius:999px;
+  background:rgba(240,216,172,.14);
+  color:var(--gold-light);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.06em;
+  line-height:1.5;
+  text-transform:uppercase;
+}
+.premium-home .hero .eyebrow { margin-bottom:20px; }
+.lang-th .hero .eyebrow,.lang-th .page-hero .eyebrow { letter-spacing:.02em; }
+@media(max-width:560px) {
+  .premium-home .hero .eyebrow,.page-hero .eyebrow { font-size:11px; letter-spacing:.04em; border-radius:16px; }
+}
