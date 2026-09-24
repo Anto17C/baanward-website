@@ -2296,3 +2296,10 @@ input,select,textarea { background:#fff; }
 .closing-channels .channel-link svg,.closing-channels .channel-link img { width:20px; height:20px; }
 .closing-channels .channel-whatsapp svg { width:22px; height:22px; }
 .closing-channels .channel-text { font-size:.82rem; }
+
+/* Closing band: tiles and inquiry button read as one group of five actions. */
+@media(min-width:901px) {
+  .closing-inner { display:flex; align-items:stretch; justify-content:flex-start; gap:12px; }
+  .closing-inner>div:first-child { flex:1 1 auto; align-self:center; padding-right:32px; }
+  .closing-inner>.button { align-self:stretch; justify-self:auto; display:inline-flex; align-items:center; justify-content:center; gap:10px; height:auto; min-height:84px; padding:0 30px; border-radius:22px; }
+}
