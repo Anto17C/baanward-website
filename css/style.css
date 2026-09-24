@@ -1992,7 +1992,8 @@ input,select,textarea { background:#fff; }
 @media(prefers-reduced-motion:reduce) { .qa-card,.qa-card::before,.qa-num,.qa-q,.qa-a,.qa-a::before { transition:none; } .qa-card:hover { transform:none; } }
 
 /* Section intro paragraphs share one width so they read as about three lines. */
-.qa-intro,.section-heading>.section-intro { max-width:500px; }
+.qa-intro { max-width:545px; }
+.section-heading>.section-intro { max-width:500px; }
 .section-heading>.section-intro { color:var(--muted); }
 
 /* Service cards: full-bleed photo tiles with the copy set over a deep-green fade. */
