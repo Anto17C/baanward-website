@@ -2212,3 +2212,23 @@ input,select,textarea { background:#fff; }
 .cv-glass { align-content:start; }
 .jr-card { display:flex; flex-direction:column; align-items:flex-start; }
 .jr-card .jr-track { margin-top:auto; padding-top:24px; }
+
+/* Location pages: numbered stage cards, five service tiles, checklist cards, nearby chips. */
+.ab-quad { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
+.ab-quad .ab-card { padding:30px 26px 28px; }
+.ab-quad .ab-card h3 { font-size:1.25rem; }
+.ab-cover .ab-note { margin:22px 0 0; }
+.ab-cover .ab-checks+.ab-note { margin-top:18px; }
+.ab-checks { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.ab-checks li { display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:start; padding:18px 20px; border:1px solid var(--line); border-radius:16px; background:#fffdf8; color:var(--ink); font-size:.92rem; line-height:1.55; transition:transform .25s ease,border-color .25s ease; }
+.ab-checks li::before { content:'✓'; display:grid; place-items:center; width:26px; height:26px; border-radius:50%; background:#f7ede7; border:1px solid #d9c3b8; color:var(--clay); font-size:.8rem; font-weight:700; }
+.ab-checks li:hover { transform:translateY(-3px); border-color:#cfd5c2; }
+.ab-near h2::after { content:''; display:block; width:54px; height:3px; margin:20px 0 0; border-radius:999px; background:var(--clay); }
+.ab-near .related-locations { margin-top:30px; gap:10px; }
+.ab-near .related-locations a { padding:10px 20px; border:1px solid #cfd5c2; border-radius:999px; background:#fffdf8; color:var(--forest); font-size:.88rem; font-weight:600; transition:background .25s ease,color .25s ease,border-color .25s ease,transform .25s ease; }
+.ab-near .related-locations a:hover { background:var(--forest); border-color:var(--forest); color:#fffdf8; transform:translateY(-2px); }
+.ab-near .related-locations a:last-child { border-color:var(--clay); color:var(--clay); }
+.ab-near .related-locations a:last-child:hover { background:var(--clay); border-color:var(--clay); color:#fffdf8; }
+@media(max-width:1000px) { .ab-quad { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:620px) { .ab-quad,.ab-checks { grid-template-columns:1fr; } }
+@media(prefers-reduced-motion:reduce) { .ab-checks li,.ab-near .related-locations a { transition:none; } .ab-checks li:hover,.ab-near .related-locations a:hover { transform:none; } }
