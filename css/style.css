@@ -2157,3 +2157,8 @@ input,select,textarea { background:#fff; }
 @media(min-width:901px) { .ab-chips { flex-wrap:nowrap; gap:8px; } .ab-chips a { padding:9px 15px; font-size:.85rem; white-space:nowrap; } }
 @media(max-width:900px) { .ab-cover-grid { grid-template-columns:1fr; gap:34px; } }
 @media(min-width:901px) and (max-width:1150px) { .ab-chips { gap:6px; } .ab-chips a { padding:8px 11px; font-size:.78rem; } .ab-cover-grid { gap:32px; } }
+
+/* About coverage: paragraph and chips sit toward the right edge. */
+.ab-cover-grid>div:last-child { justify-self:end; max-width:600px; }
+.ab-cover-grid>div:last-child .ab-chips { justify-content:flex-end; }
+@media(max-width:900px) { .ab-cover-grid>div:last-child { justify-self:stretch; max-width:none; } .ab-cover-grid>div:last-child .ab-chips { justify-content:flex-start; } }
