@@ -1964,10 +1964,6 @@ input,select,textarea { background:#fff; }
 }
 @media(prefers-reduced-motion:reduce) { .step-badge,.agree-list>li { transition:none; } .process-steps>li:hover .step-badge,.agree-list>li:hover { transform:none; } }
 
-/* Eyebrows use the logo-dot clay. The hero pills sit on photos, so they get a light pill to stay readable. */
-.eyebrow,.split>div>.eyebrow { color:var(--clay); }
-.premium-home .hero .eyebrow,.page-hero .eyebrow { color:var(--clay); background:rgba(250,248,242,.94); border-color:rgba(250,248,242,.94); }
-.grounded .eyebrow,.grounded .split>div>.eyebrow { color:#e0bb94; }
 /* The due-diligence band is light, so it needs dark-on-light text (it also carries the .grounded class). */
 .grounded.due-diligence-section .eyebrow,.grounded.due-diligence-section .split>div>.eyebrow { color:var(--clay); }
 .grounded.due-diligence-section h2 { color:var(--ink); }
