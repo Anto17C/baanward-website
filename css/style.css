@@ -1895,3 +1895,15 @@ input,select,textarea { background:#fff; }
   .lang-item .lang-toggle { justify-self:start; }
   .lang-item .dropdown { min-width:220px; }
 }
+
+/* Hero type scale, following the Walailaklaw hero: 44px headline (32px on phones), 16.5px sub-text
+   capped at 520px; inner-page heroes use a 32px heading with 14.5px sub-text. */
+.premium-home .hero h1 { font-size:44px; line-height:1.15; letter-spacing:-.01em; }
+.premium-home .hero-content>p.hero-intro { font-size:16.5px; line-height:1.7; max-width:520px; color:#d3d6cc; }
+.page-hero h1 { font-size:32px; line-height:1.2; }
+.page-hero .lead { font-size:14.5px; line-height:1.7; max-width:520px; color:#d3d6cc; }
+.lang-th.premium-home .hero h1 { font-size:40px; line-height:1.35; }
+@media(max-width:560px) {
+  .premium-home .hero h1 { font-size:32px; line-height:1.2; }
+  .lang-th.premium-home .hero h1 { font-size:30px; line-height:1.35; }
+}
