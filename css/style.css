@@ -2289,3 +2289,10 @@ input,select,textarea { background:#fff; }
 .closing-channels .channel-text { color:var(--forest); font-size:.86rem; font-weight:600; }
 .closing-channels .channel-link:hover { border-color:var(--forest); background:#fff; box-shadow:0 10px 20px -14px rgba(28,48,38,.6); }
 @media(max-width:420px) { .closing-channels { grid-template-columns:1fr; } }
+
+/* Keep the closing band the same height as its text block. */
+.closing-channels { gap:8px 10px; }
+.closing-channels .channel-link { height:38px; padding:0 18px 0 12px; gap:8px; }
+.closing-channels .channel-link svg,.closing-channels .channel-link img { width:20px; height:20px; }
+.closing-channels .channel-whatsapp svg { width:22px; height:22px; }
+.closing-channels .channel-text { font-size:.82rem; }
