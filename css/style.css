@@ -2306,3 +2306,76 @@ input,select,textarea { background:#fff; }
   .closing .closing-inner h2 br { display:none; }
   .closing-inner { gap:24px; }
 }
+
+/* Centred section headers (Train Develop Empower style): bar + eyebrow, bold title, muted description, all centred. */
+.section-heading,.ab-head,.pillars-intro { display:flex; flex-direction:column; flex-wrap:nowrap; align-items:center; justify-content:center; gap:0; margin:0 0 48px; text-align:center; }
+.section-heading>div,.ab-head>div { width:100%; text-align:center; }
+.expect-intro,.ab-dark-intro { margin:0 0 48px; text-align:center; }
+.section-heading .eyebrow,
+.ab-head .eyebrow,
+.pillars-intro .eyebrow,
+.expect-intro .eyebrow,
+.ab-dark-intro .eyebrow,
+.ab-cover-grid>div:first-child .eyebrow,
+#services>.container>.eyebrow,
+.ab-near>.container>.eyebrow { display:flex; width:100%; max-width:none; justify-content:center; align-items:center; gap:12px; margin:0 0 16px; font-family:Inter,Arial,sans-serif; font-size:.75rem; font-weight:700; letter-spacing:.13em; line-height:1.65; text-transform:uppercase; color:var(--clay); }
+.section-heading .eyebrow::before,
+.ab-head .eyebrow::before,
+.pillars-intro .eyebrow::before,
+.expect-intro .eyebrow::before,
+.ab-dark-intro .eyebrow::before,
+.ab-cover-grid>div:first-child .eyebrow::before,
+#services>.container>.eyebrow::before,
+.ab-near>.container>.eyebrow::before { content:''; display:block; flex:none; width:36px; height:3px; border-radius:2px; background:var(--clay); }
+.section-heading h2,
+.ab-head h2,
+.pillars-intro h2,
+.expect-intro h2,
+.ab-dark-intro h2,
+.ab-cover-grid>div:first-child h2,
+#services>.container>h2,
+.ab-near>.container>h2 { max-width:900px; margin:0 auto; font-family:Inter,Arial,sans-serif; font-size:clamp(1.6rem,3vw,2.2rem); font-weight:700; line-height:1.2; letter-spacing:normal; color:var(--forest); text-align:center; text-wrap:balance; }
+.section-heading h2::after,
+.ab-head h2::after,
+.pillars-intro h2::after,
+.expect-intro h2::after,
+.ab-dark-intro h2::after,
+.ab-cover-grid>div:first-child h2::after,
+#services>.container>h2::after,
+.ab-near>.container>h2::after { content:none; }
+.lang-th .section-heading h2,
+.lang-th .ab-head h2,
+.lang-th .pillars-intro h2,
+.lang-th .expect-intro h2,
+.lang-th .ab-dark-intro h2,
+.lang-th .ab-cover-grid>div:first-child h2,
+.lang-th #services>.container>h2,
+.lang-th .ab-near>.container>h2 { font-family:'Noto Sans Thai',Inter,sans-serif; line-height:1.35; }
+.section-heading>p,.ab-head>.ab-lead,.section-heading .qa-intro,.section-heading>.section-intro { max-width:560px; margin:12px auto 0; color:var(--muted); font-size:1rem; line-height:1.65; text-align:center; }
+.qa-intro p { margin:0 auto 14px; }
+.qa-intro .text-link,.pillars-intro .process-link,.cv-approach .process-link { margin:16px 0 0; }
+#services>.container>h2 { margin-bottom:48px; }
+.ab-near>.container>h2 { margin-bottom:0; }
+.ab-near .related-locations { justify-content:center; margin-top:32px; }
+/* dark sections */
+.ab-dark .eyebrow,
+.expectations .eyebrow,
+.cv-approach .eyebrow { color:var(--gold-light); }
+.ab-dark .eyebrow::before,
+.expectations .eyebrow::before,
+.cv-approach .eyebrow::before { background:var(--gold); }
+.ab-dark h2,
+.expectations h2 { color:#fffdf8; }
+.ab-dark .ab-lead { color:#dbe1d3; }
+/* about "independent support" and "clear from the start": heading on top, glass cards below */
+.ab-dark-grid { display:block; }
+.ab-glass-list { grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); }
+.ab-glass-list:has(.ab-glass:only-child) { max-width:780px; margin-inline:auto; }
+/* about coverage: heading, paragraph and chips stacked and centred */
+.ab-cover-grid { display:block; }
+.ab-cover-grid>div:first-child { margin:0 0 28px; }
+.ab-cover-grid>div:last-child { max-width:720px; margin:0 auto; justify-self:center; text-align:center; }
+.ab-cover-grid>div:last-child>p { max-width:560px; margin:0 auto 24px; }
+/* home pillars: intro on top */
+.pillars-grid { display:block; }
+@media(max-width:900px) { .section-heading,.ab-head,.pillars-intro,.expect-intro,.ab-dark-intro { margin-bottom:36px; } }
