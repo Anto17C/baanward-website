@@ -2576,3 +2576,6 @@ input,select,textarea { background:#fff; }
 /* Eyebrows between the hero and the footer use the small 10px size. */
 main section:not(.hero):not(.page-hero) .eyebrow { font-size:10px !important; }
 .lang-th main section:not(.hero):not(.page-hero) .eyebrow { font-size:12px !important; }
+
+/* Desktop section eyebrows a touch larger (10.5px); on mobile the script below fits their letter-spacing to the line. */
+@media(min-width:901px) { main section:not(.hero):not(.page-hero) .eyebrow { font-size:10.5px !important; } }
