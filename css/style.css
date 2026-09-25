@@ -2447,3 +2447,9 @@ input,select,textarea { background:#fff; }
 .lang-th .ab-cover-grid>div:first-child .eyebrow,
 .lang-th #services>.container>.eyebrow,
 .lang-th .ab-near>.container>.eyebrow { font-size:.95rem; letter-spacing:.04em; font-weight:600; font-family:'Noto Sans Thai',Inter,sans-serif; }
+
+/* "See more" links sit below the cards they follow, centred. */
+.section-more { margin-top:44px; text-align:center; }
+.section-more .text-link { margin:0; }
+.pillars-section .section-more .process-link,.qa-section .section-more .text-link { color:var(--forest); border-color:#afb6a5; }
+.pillars-section .section-more .process-link:hover { color:#77432f; border-color:var(--clay); }
