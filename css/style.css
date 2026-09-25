@@ -2549,13 +2549,12 @@ input,select,textarea { background:#fff; }
 .eyebrow,.support-label { font-size:.8rem !important; font-weight:600 !important; letter-spacing:.06em !important; text-transform:uppercase !important; }
 .lang-th .eyebrow,.lang-th .support-label { letter-spacing:.02em !important; }
 
-/* ---- Footer bars run edge to edge with full-width border lines (Walailak Law Firm style). ---- */
-.site-footer { padding-bottom:0; }
-.footer-locations,.footer-bottom { position:relative; clip-path:inset(0 -100vmax); }
-.footer-locations::before,.footer-bottom::before { content:''; position:absolute; top:0; left:50%; width:100vw; margin-left:-50vw; border-top:1px solid rgba(240,216,172,.16); pointer-events:none; }
-.footer-locations { background:#2b4436; box-shadow:0 0 0 100vmax #2b4436; }
-.footer-bottom { margin-top:0; padding:18px 0; border-top:0; background:rgba(0,0,0,.22); box-shadow:0 0 0 100vmax rgba(0,0,0,.22); }
-@media(max-width:560px) { .site-footer { padding-bottom:0; } .footer-bottom { padding:16px 0; margin-top:0; } }
+/* ---- Footer: the coverage areas box sits inside the page margins; the copyright line is unchanged. ---- */
+.site-footer { padding-bottom:22px; }
+.footer-locations { position:relative; clip-path:none; box-shadow:none; background:#2b4436; border:1px solid rgba(240,216,172,.16); border-radius:14px; padding:14px 8px; }
+.footer-locations::before { content:none; }
+.footer-bottom { margin-top:8px; padding-top:22px; padding-bottom:0; border-top:1px solid rgba(240,216,172,.16); background:none; box-shadow:none; clip-path:none; }
+@media(max-width:560px) { .site-footer { padding-bottom:22px; } .footer-bottom { padding-top:18px; margin-top:0; } }
 
 /* ---- Bottom call-to-action band: same height as Train Develop Empower's (about 158px on desktop). ---- */
 .closing { padding:34px 0; }
