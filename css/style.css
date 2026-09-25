@@ -2542,3 +2542,6 @@ input,select,textarea { background:#fff; }
   .site-footer { padding-bottom:22px; }
   .footer-bottom { padding-top:18px; margin-top:0; gap:8px; }
 }
+
+/* Contact page on phones: the inquiry form comes first, contact details after it. */
+@media(max-width:800px) { .contact-layout>form { order:-1; } }
