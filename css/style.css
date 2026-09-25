@@ -2579,3 +2579,11 @@ main section:not(.hero):not(.page-hero) .eyebrow { font-size:10px !important; }
 
 /* Desktop section eyebrows a touch larger (10.5px); on mobile the script below fits their letter-spacing to the line. */
 @media(min-width:901px) { main section:not(.hero):not(.page-hero) .eyebrow { font-size:10.5px !important; } }
+
+/* Sample report header centred on phones. */
+@media(max-width:800px) {
+  .report-head { flex-direction:column; align-items:center; text-align:center; gap:10px; }
+  .report-head>div { text-align:center; }
+  .report .eyebrow { display:block; text-align:center; }
+  .report-meta { text-align:center; }
+}
