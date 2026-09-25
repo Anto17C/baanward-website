@@ -2546,8 +2546,9 @@ input,select,textarea { background:#fff; }
 @media(max-width:800px) { .contact-layout>form { order:-1; } }
 
 /* ---- Eyebrows, standardised: 12.8px, weight 600, 0.06em, uppercase (as on Walailak Law Firm). ---- */
-.eyebrow,.support-label { font-size:.8rem !important; font-weight:600 !important; letter-spacing:.06em !important; text-transform:uppercase !important; }
-.lang-th .eyebrow,.lang-th .support-label { letter-spacing:.02em !important; }
+.eyebrow { font-size:.8rem !important; font-weight:600 !important; letter-spacing:.06em !important; text-transform:uppercase !important; }
+@media(min-width:901px) { .eyebrow { letter-spacing:.2em !important; } }
+.lang-th .eyebrow { letter-spacing:.02em !important; }
 
 /* ---- Footer: the coverage areas box sits inside the page margins; the copyright line is unchanged. ---- */
 .site-footer { padding-bottom:22px; }
