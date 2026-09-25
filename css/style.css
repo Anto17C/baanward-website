@@ -2532,3 +2532,13 @@ input,select,textarea { background:#fff; }
   .nav-item:not(.lang-item)>.dropdown { display:none; }
   .nav-item.submenu-open:not(.lang-item)>.dropdown { display:block; }
 }
+
+/* Mobile refinements: centred coverage buttons, tighter footer bottom. */
+@media(max-width:900px) {
+  .ab-cover-grid>div:last-child { text-align:center; }
+  .ab-cover-grid>div:last-child .ab-chips { justify-content:center; }
+}
+@media(max-width:560px) {
+  .site-footer { padding-bottom:22px; }
+  .footer-bottom { padding-top:18px; margin-top:0; gap:8px; }
+}
