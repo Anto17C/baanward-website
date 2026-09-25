@@ -11,7 +11,7 @@ function setSubmenu(item, open) {
 function setMenu(open) {
   menuButton?.setAttribute('aria-expanded', String(open));
   navigation?.classList.toggle('open', open);
-  navItems.forEach(item => setSubmenu(item, open && mobileNavigation.matches));
+  navItems.forEach(item => setSubmenu(item, false));
 }
 menuButton?.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));
 navItems.forEach(item => {
@@ -214,3 +214,23 @@ if (propertyTicker) {
   updateSpeed();
   updateMotion();
 }
+
+// Step cards fade up one after another as they scroll into view.
+(() => {
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const cards = document.querySelectorAll('.process-steps>li, .qa-card, .pillar, .ab-card, .ab-checks-row li');
+  const seen = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      seen.unobserve(el);
+      el.classList.add('in');
+      setTimeout(() => { el.classList.remove('js-reveal', 'in'); el.style.transitionDelay = ''; }, 1400);
+    });
+  }, { threshold: 0.12 });
+  cards.forEach((el) => {
+    el.style.transitionDelay = `${([...el.parentElement.children].indexOf(el) % 4) * 90}ms`;
+    el.classList.add('js-reveal');
+    seen.observe(el);
+  });
+})();

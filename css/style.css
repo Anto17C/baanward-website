@@ -2453,3 +2453,82 @@ input,select,textarea { background:#fff; }
 .section-more .text-link { margin:0; }
 .pillars-section .section-more .process-link,.qa-section .section-more .text-link { color:var(--forest); border-color:#afb6a5; }
 .pillars-section .section-more .process-link:hover { color:#77432f; border-color:var(--clay); }
+
+/* ---- Step cards: centred cards with a ringed badge on the top edge, gold rule under the title. ---- */
+:root { --card-line:#e6d7b8; --ring:#c9a45c; --ring-bg:#faf8f2; }
+.soft,.sv-band.soft,.ct-stages,.ct-checks { --ring-bg:#f0eee7; }
+.pillars-section { --ring-bg:#fffdf8; }
+.process-steps>li,.qa-card,.pillar,.ab-card,.ab-checks-row li { position:relative; background:#fffdf8; border:1px solid var(--card-line); border-radius:20px; padding:46px 20px 24px; text-align:center; box-shadow:0 16px 32px -24px rgba(28,48,38,.35); overflow:visible; }
+.pillar { background:#faf8f2; }
+.process-steps { gap:16px; row-gap:46px; padding-top:6px; }
+.qa-grid,.pillars-list,.ab-trio,.ab-duo,.ab-checks.ab-checks-row { row-gap:46px; }
+.ab-trio,.ab-duo { padding-top:6px; }
+/* badges */
+.step-badge,.qa-num,.ab-card:not(.jr-card) .ab-num,.pillar-icon,.ab-checks-row li::before { position:absolute; top:-24px; left:50%; margin:0; transform:translateX(-50%); display:grid; place-items:center; width:46px; height:46px; border-radius:50%; background:var(--forest); color:var(--gold-light); font-family:Georgia,'Times New Roman',serif; font-size:.9rem; font-weight:400; letter-spacing:0; box-shadow:0 0 0 4px var(--ring-bg),0 0 0 5px var(--ring); }
+.pillar-icon { width:50px; height:50px; border:0; }
+.pillar-icon svg { width:22px; height:22px; color:var(--gold-light); }
+.ab-checks-row li::before { content:'✓'; width:40px; height:40px; top:-20px; font-family:Inter,Arial,sans-serif; font-size:1rem; border:0; }
+.process-steps>li:hover .step-badge { background:var(--forest); color:var(--gold-light); transform:translateX(-50%); }
+.jr-card .ab-num { position:absolute; top:-16px; left:50%; transform:translateX(-50%); margin:0; padding:7px 16px; border:1px solid var(--ring); border-radius:999px; background:var(--forest); color:var(--gold-light); font-size:.7rem; white-space:nowrap; box-shadow:0 0 0 4px var(--ring-bg); }
+/* titles with a short gold rule */
+.process-steps h3,.qa-q,.ab-card h3,.pillar h3 { margin:0 0 12px; text-align:center; }
+.process-steps h3::after,.ab-card h3::after,.pillar h3::after { content:''; display:block; width:34px; height:2px; margin:12px auto 0; background:var(--gold-ink); }
+.qa-q { margin:0; }
+.qa-q::after { content:''; display:block; width:34px; height:2px; margin:14px auto 14px; background:var(--gold-ink); }
+.qa-card { align-items:center; }
+.qa-card::before { content:none; }
+.qa-a { margin:0; padding-top:0; border-top:0; }
+.qa-a::before { content:none; }
+.ab-card::before { content:none; }
+.pillar::after { content:none; }
+.ab-card p,.pillar p,.process-steps p,.qa-a { text-align:center; }
+.ab-card:hover,.pillar:hover { transform:translateY(-4px); border-color:var(--ring); }
+.jr-track { justify-content:center; }
+.jr-card { align-items:center; }
+/* connectors between sequential cards (desktop) */
+.process-steps>li:not(:last-child)::after,.jr-card:not(:last-child)::after { content:'›'; position:absolute; top:-16px; right:-17px; left:auto; bottom:auto; width:18px; height:auto; background:none; text-align:center; color:var(--ring); font-size:24px; line-height:1; transform:none; z-index:2; }
+/* scroll reveal */
+.js-reveal { opacity:0; transform:translateY(20px); transition:opacity .6s ease,transform .6s ease; }
+.js-reveal.in { opacity:1; transform:none; }
+@media(max-width:1000px) {
+  .process-steps { grid-template-columns:repeat(2,minmax(0,1fr)); max-width:none; }
+  .process-steps>li { padding:46px 20px 24px; min-height:0; }
+  .process-steps>li:not(:last-child)::after,.jr-card:not(:last-child)::after { content:none; }
+  .step-badge { position:absolute; left:50%; top:-24px; }
+  .process-steps h3 { padding-top:0; }
+}
+@media(max-width:620px) {
+  .process-steps { grid-template-columns:1fr; }
+  .pillars-list,.ab-checks.ab-checks-row { grid-template-columns:repeat(2,minmax(0,1fr)); gap:46px 12px; }
+  .pillar,.ab-checks-row li { padding:44px 12px 20px; }
+  .pillar p,.ab-checks-row li { font-size:.84rem; }
+  .ab-checks-row li { grid-template-columns:1fr; }
+}
+@media(prefers-reduced-motion:reduce) { .js-reveal { opacity:1; transform:none; transition:none; } }
+
+/* ---- Mobile, in the Train Develop Empower manner: hamburger icon, centred call-to-action, stacked footer. ---- */
+@media(max-width:1100px) {
+  .site-header .menu-toggle { font-size:0; gap:0; padding:8px 10px; border:0; background:transparent; }
+  .site-header .menu-toggle span { font-size:30px; line-height:1; color:var(--forest); }
+}
+@media(max-width:900px) {
+  .closing-inner { align-items:center; text-align:center; gap:24px; }
+  .closing-inner>div:first-child { padding:0; }
+  .closing-channels { justify-self:center; grid-template-columns:repeat(2,minmax(0,1fr)); width:100%; max-width:340px; }
+  .closing-channels .channel-link { justify-content:center; padding:0 10px; }
+  .closing-inner>.button { justify-self:center; width:100%; max-width:340px; justify-content:center; }
+  .closing::after { opacity:.25; right:50%; transform:translate(50%,-50%); }
+}
+@media(max-width:420px) { .closing-channels { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:560px) {
+  .footer-grid { grid-template-columns:1fr; gap:34px; }
+  .footer-grid>div:first-child { grid-column:auto; }
+  .site-footer { padding-bottom:88px; }
+  .footer-bottom { text-align:center; align-items:center; }
+}
+
+/* Mobile menu: submenus stay collapsed until their arrow is tapped. */
+@media(max-width:1100px) {
+  .nav-item:not(.lang-item)>.dropdown { display:none; }
+  .nav-item.submenu-open:not(.lang-item)>.dropdown { display:block; }
+}
