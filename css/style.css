@@ -2602,10 +2602,7 @@ main section:not(.hero):not(.page-hero) .eyebrow { font-size:10px !important; }
 
 /* How We Work on phones: the "property verification" text block is centred. */
 @media(max-width:800px) {
-  #reports .split>div:first-child { text-align:center; }
   #reports .split>div:first-child .eyebrow { display:block; width:100%; text-align:center; }
   #reports .split>div:first-child h2 { margin-left:auto; margin-right:auto; text-align:center; }
   #reports .split>div:first-child h2::after { margin-left:auto; margin-right:auto; }
-  #reports .split>div:first-child p { text-align:center; }
-  #reports .split>div:first-child .text-link { display:inline-block; }
 }
