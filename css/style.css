@@ -2606,3 +2606,16 @@ main section:not(.hero):not(.page-hero) .eyebrow { font-size:10px !important; }
   #reports .split>div:first-child h2 { margin-left:auto; margin-right:auto; text-align:center; }
   #reports .split>div:first-child h2::after { margin-left:auto; margin-right:auto; }
 }
+
+/* Location pages: the construction note and the confirmation note as two stacked cards. */
+.ct-notes { display:grid; gap:16px; max-width:860px; margin:44px auto 0; }
+.ct-note-card { display:grid; grid-template-columns:auto 1fr; gap:22px; align-items:center; padding:26px 30px; background:#fffdf8; border:1px solid var(--card-line); border-radius:20px; box-shadow:0 16px 32px -24px rgba(28,48,38,.35); transition:transform .3s ease,border-color .3s ease; }
+.ct-note-card:hover { transform:translateY(-3px); border-color:var(--ring); }
+.ct-icon { display:grid; place-items:center; width:54px; height:54px; border-radius:50%; background:var(--forest); color:var(--gold-light); box-shadow:0 0 0 4px #faf8f2,0 0 0 5px var(--ring); }
+.ct-icon svg { width:24px; height:24px; }
+.ct-note-card h3 { margin:0 0 6px; font-family:Georgia,'Times New Roman',serif; font-size:1.3rem; font-weight:400; line-height:1.25; color:var(--forest); }
+.ct-note-card h3::after { content:''; display:block; width:34px; height:2px; margin:10px 0 0; background:var(--gold-ink); }
+.ct-note-card p { margin:10px 0 0; color:var(--muted); font-size:.98rem; line-height:1.65; }
+.lang-th .ct-note-card h3 { font-family:'Noto Sans Thai',sans-serif; font-weight:600; line-height:1.4; }
+@media(max-width:560px) { .ct-note-card { grid-template-columns:1fr; justify-items:center; text-align:center; gap:16px; padding:24px 20px; } .ct-note-card h3::after { margin-inline:auto; } }
+@media(prefers-reduced-motion:reduce) { .ct-note-card { transition:none; } .ct-note-card:hover { transform:none; } }
