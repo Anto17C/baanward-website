@@ -2580,14 +2580,6 @@ main section:not(.hero):not(.page-hero) .eyebrow { font-size:10px !important; }
 /* Desktop section eyebrows a touch larger (10.5px); on mobile the script below fits their letter-spacing to the line. */
 @media(min-width:901px) { main section:not(.hero):not(.page-hero) .eyebrow { font-size:10.5px !important; } }
 
-/* Sample report header centred on phones. */
-@media(max-width:800px) {
-  .report-head { flex-direction:column; align-items:center; text-align:center; gap:10px; }
-  .report-head>div { text-align:center; }
-  .report .eyebrow { display:block; text-align:center; }
-  .report-meta { text-align:center; }
-}
-
 /* Due diligence: the four numbered step cards sit directly under the band. */
 .dd-steps { margin:26px 0 12px; }
 .dd-steps p { color:var(--ink); font-size:.95rem; }
@@ -2607,3 +2599,13 @@ main section:not(.hero):not(.page-hero) .eyebrow { font-size:10px !important; }
 .sv-duo-grid { row-gap:46px; }
 .sv-glass { position:relative; padding-top:52px; }
 .sv-glass .pillar-icon { position:absolute; top:-26px; left:50%; transform:translateX(-50%); width:52px; height:52px; border:0; background:var(--forest); color:var(--gold-light); box-shadow:0 0 0 4px #1b2e23,0 0 0 5px var(--ring); }
+
+/* How We Work on phones: the "property verification" text block is centred. */
+@media(max-width:800px) {
+  #reports .split>div:first-child { text-align:center; }
+  #reports .split>div:first-child .eyebrow { display:block; width:100%; text-align:center; }
+  #reports .split>div:first-child h2 { margin-left:auto; margin-right:auto; text-align:center; }
+  #reports .split>div:first-child h2::after { margin-left:auto; margin-right:auto; }
+  #reports .split>div:first-child p { text-align:center; }
+  #reports .split>div:first-child .text-link { display:inline-block; }
+}
