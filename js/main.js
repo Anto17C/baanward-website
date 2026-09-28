@@ -46,13 +46,21 @@ const inquiryContext = new URLSearchParams(location.search);
 const validServices = ['buyer-support','remote-property-oversight','owner-care'];
 const pageService = location.pathname.split('/').pop().replace(/\.html$/, '');
 const selectedService = validServices.includes(pageService) ? pageService : inquiryContext.get('service');
-const selectedCity = inquiryContext.get('location');
+const cityNames = {
+  pattaya: 'Pattaya', rayong: 'Rayong', chonburi: 'Chonburi', bangkok: 'Bangkok',
+  nonthaburi: 'Nonthaburi', phuket: 'Phuket', 'hua-hin': 'Hua Hin',
+  'chiang-mai': 'Chiang Mai', 'koh-samui': 'Koh Samui'
+};
+const cityPage = location.pathname.match(/\/locations\/([^/]+?)(?:\.html)?\/?$/);
+// The city currently being viewed takes precedence over an earlier query value.
+const selectedCity = (cityPage && cityNames[cityPage[1]]) || inquiryContext.get('location');
 document.querySelectorAll('a[href]').forEach(link => {
   const target = new URL(link.getAttribute('href'), location.href);
   if (target.origin !== location.origin) return;
   const isContact = /\/contact(?:\.html)?$/.test(target.pathname);
   const isLanguage = Boolean(link.closest('.lang-item'));
-  if (!isContact && !isLanguage) return;
+  const isService = validServices.includes(target.pathname.split('/').pop().replace(/\.html$/, ''));
+  if (!isContact && !isLanguage && !isService) return;
   if (selectedCity && selectedCity.length <= 120) target.searchParams.set('location', selectedCity);
   if (validServices.includes(selectedService)) target.searchParams.set('service', selectedService);
   if (target.search) link.setAttribute('href', target.pathname + target.search + target.hash);
@@ -233,46 +241,4 @@ if (propertyTicker) {
     el.classList.add('js-reveal');
     seen.observe(el);
   });
-})();
-
-// Mobile eyebrows: keep them on one line. Short ones use the wide 0.2em spacing; long ones tighten
-// their letter-spacing (and, if still too long, their size) until they fit the available width.
-(() => {
-  const narrow = window.matchMedia('(max-width: 900px)');
-  const eyebrows = [...document.querySelectorAll('.eyebrow')];
-  const px = (value) => parseFloat(value) || 0;
-  const fit = () => {
-    eyebrows.forEach((el) => {
-      ['letter-spacing', 'font-size', 'white-space'].forEach((prop) => el.style.removeProperty(prop));
-    });
-    if (!narrow.matches) return;
-    const thai = document.body.classList.contains('lang-th');
-    eyebrows.forEach((el) => {
-      const style = getComputedStyle(el);
-      const parent = el.parentElement;
-      const parentStyle = getComputedStyle(parent);
-      const avail = parent.clientWidth - px(parentStyle.paddingLeft) - px(parentStyle.paddingRight)
-        - px(style.paddingLeft) - px(style.paddingRight) - px(style.borderLeftWidth) - px(style.borderRightWidth);
-      if (avail <= 0) return;
-      el.style.setProperty('white-space', 'nowrap', 'important');
-      el.style.setProperty('letter-spacing', '0px', 'important');
-      const range = document.createRange();
-      range.selectNodeContents(el);
-      const natural = range.getBoundingClientRect().width;
-      const chars = el.textContent.trim().length;
-      const size = px(style.fontSize);
-      let spacing = Math.min(size * (thai ? 0.02 : 0.2), (avail - natural) / chars);
-      if (spacing < 0) {
-        el.style.setProperty('font-size', `${(size * avail / natural) * 0.98}px`, 'important');
-        spacing = 0;
-      }
-      el.style.setProperty('letter-spacing', `${spacing}px`, 'important');
-    });
-  };
-  let timer;
-  const refit = () => { clearTimeout(timer); timer = setTimeout(fit, 80); };
-  window.addEventListener('resize', refit);
-  narrow.addEventListener('change', fit);
-  (document.fonts?.ready || Promise.resolve()).then(fit);
-  fit();
 })();
