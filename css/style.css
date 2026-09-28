@@ -2545,8 +2545,8 @@ input,select,textarea { background:#fff; }
 /* Contact page on phones: the inquiry form comes first, contact details after it. */
 @media(max-width:800px) { .contact-layout>form { order:-1; } }
 
-/* ---- Eyebrows, standardised: 12.8px, weight 600, 0.06em, uppercase (as on Walailak Law Firm). ---- */
-.eyebrow { font-size:.8rem !important; font-weight:600 !important; letter-spacing:.06em !important; text-transform:uppercase !important; }
+/* ---- Eyebrows: 12px across all screen sizes, matching Walailak Law Firm. ---- */
+.eyebrow { font-size:12px !important; font-weight:600 !important; letter-spacing:.06em !important; text-transform:uppercase !important; }
 @media(min-width:901px) { .eyebrow { letter-spacing:.2em !important; } }
 .lang-th .eyebrow { letter-spacing:.02em !important; }
 
@@ -2572,13 +2572,6 @@ input,select,textarea { background:#fff; }
 /* Question cards get their speech-mark back. */
 .qa-card::before { content:'\201C'; position:absolute; right:16px; top:2px; font:400 96px/1 Georgia,'Times New Roman',serif; color:rgba(155,80,58,.16); pointer-events:none; transition:color .3s ease; }
 .qa-card:hover::before,.qa-card:focus-within::before { color:rgba(240,216,172,.2); }
-
-/* Eyebrows between the hero and the footer use the small 10px size. */
-main section:not(.hero):not(.page-hero) .eyebrow { font-size:10px !important; }
-.lang-th main section:not(.hero):not(.page-hero) .eyebrow { font-size:12px !important; }
-
-/* Desktop section eyebrows retain their compact size. */
-@media(min-width:901px) { main section:not(.hero):not(.page-hero) .eyebrow { font-size:10.5px !important; } }
 
 /* Due diligence: the four numbered step cards sit directly under the band. */
 .dd-steps { margin:26px 0 12px; }
