@@ -87,7 +87,25 @@ Four English-only pages extend the existing services: `/pattaya-house-constructi
 
 There are now 88 HTML pages (25 EN, 21 each FR/DE/TH) and 84 indexable sitemap URLs. The four new pages have self-canonicals and no invented translated hreflang counterparts. Their language menus open the translated parent service, as explained on each page. Contact links prefill city and service. Translation of these pages remains with Claude. Existing four-language page families retain their reciprocal alternates. Inquiry source material is not copied into the public pages.
 
-Focused-service discovery: the English Pattaya, Rayong and Phuket pages feature descriptive local service cards immediately after their introductions, with a hero jump link. Services, Buyer Support and Property Oversight also carry relevant cards. The location sections describe focused services without making unverified popularity claims. Other city pages remain general coverage pages until distinct services are developed.
+Focused-service discovery: the English Pattaya, Rayong and Phuket pages feature descriptive local service cards immediately after their introductions, with a hero jump link. Services, Buyer Support and Property Oversight also carry relevant cards. The location sections describe focused services without making unverified popularity claims. All nine English city pages now have focused service cards; the rollout matrix below distinguishes dedicated pages from links into shared service detail.
 
 ### Phuket villa purchase support — 30 September 2026
 Added the English `/phuket-villa-purchase-checks` page, covering pre-purchase checks and due diligence coordination for villas in Phuket, with a dedicated Rawai section. The new inquiry supplied in chat is a qualitative service-gap signal, not evidence of search volume or repeated Rawai demand. A separate Rawai-only page is deferred. The wording was not found in the saved inquiry files at implementation time. Legal findings remain assigned to separately engaged counsel; local availability is confirmed. Linked from the Phuket location, Services, Buyer Support and Phuket construction oversight pages, and added to the sitemap. Other languages are pending Claude; language switches go to existing translated Buyer Support pages without declaring untranslated equivalents.
+
+### Location service rollout — 30 September 2026
+
+Use a city-level service page as the durable home for a useful service brief. Add neighbourhood questions and practical details to it as enquiries develop; a single area mention is not grounds for another URL. Do not publish enquiry quotations, personal details, invented local experience, offices, demand figures or guaranteed attendance. A standalone page needs a distinct buyer task, useful preparation and deliverables, accurate coverage and a clear route from its city and parent service. Shared service links with city context are appropriate until there is enough material for a dedicated page. This follows Google’s doorway guidance: https://developers.google.com/search/docs/essentials/spam-policies#doorway-abuse
+
+| English location | Dedicated focused pages | Other prominent service routes |
+| --- | --- | --- |
+| Pattaya | Condo purchase; house/villa purchase (new); construction inspections | Existing five-service overview retained |
+| Rayong | House purchase checks | Property care |
+| Phuket | Villa purchase (Rawai section); construction/handover | Local availability confirmed |
+| Bangkok | Condo purchase checks (new) | Handover/contractor follow-up |
+| Chonburi / Si Racha | None yet | Purchase checks; construction progress |
+| Nonthaburi | None yet | House/condo checks; condition visits |
+| Hua Hin | None yet | Purchase checks; care between stays |
+| Chiang Mai | None yet | Purchase checks; ongoing care |
+| Koh Samui | None yet | Purchase checks; construction/handover |
+
+New URLs: `/bangkok-condo-purchase-support` and `/pattaya-house-villa-purchase-checks`. These are service-fit additions based on existing coverage, not new enquiry counts or proven search demand. Both are linked from the city, Services and Buyer Support pages and included in the sitemap. Pattaya purchase and construction pages distinguish their scopes and link to each other. The new pages are English only; translations remain for Claude and language switches currently lead to existing translated Buyer Support pages. Do not declare untranslated hreflang equivalents. Hua Hin, Chiang Mai, Koh Samui and Phuket remain subject to confirmed local availability. Each city page retains all five main services alongside its focused entry points.
