@@ -31,7 +31,7 @@ The content security policy permits connections to Web3Forms. Verify the chosen 
 
 The user handles all commits and pushes manually; this integration does not update the hosted preview automatically.
 
-The public domain is https://baanward.com. Sitemap and canonical/hreflang links use Cloudflare’s extensionless URLs. Keep the 80 indexable URLs and language alternates in sync when adding pages.
+The public domain is https://baanward.com. Sitemap and canonical/hreflang links use Cloudflare’s extensionless URLs. Keep the 84 indexable URLs and language alternates in sync when adding pages.
 
 ## Assets and maintenance
 
@@ -80,3 +80,9 @@ Source: Claude's `analytics-search-handoff-2026-09-28.html`, stored outside the 
 - The root text file `057aafa1d13d2aa1ed8d3341df773dba.txt` is an IndexNow key file, not evidence of GSC DNS verification. Claude reports two accepted IndexNow submissions (HTTP 200) on 25–26 September; acceptance does not confirm indexing. The submission helper is outside the repo in the project's `Tools/indexnow.sh`.
 
 Outstanding dashboard verification: current GSC Page Indexing/validation and sitemap status; GTM published version and tag/trigger/variable inventory; GA4 event receipt, key events and internal-traffic filter configuration. Confirm whether inquiry and contact-link tracking already exists before adding anything. No Google account settings were changed during this reconciliation.
+
+## Focused English service pages — 30 September 2026
+
+Four English-only pages extend the existing services: `/pattaya-house-construction-inspection`, `/rayong-house-purchase-checks`, `/pattaya-condo-purchase-support` and `/phuket-villa-construction-oversight`. They are linked from Services and their relevant service/city pages. Phuket delivery remains subject to confirmed local availability. Technical and legal conclusions remain the appointed specialists’ responsibility; bundled scope pricing is preserved.
+
+There are now 88 HTML pages (25 EN, 21 each FR/DE/TH) and 84 indexable sitemap URLs. The four new pages have self-canonicals and no invented translated hreflang counterparts. Their language menus open the translated parent service, as explained on each page. Contact links prefill city and service. Translation of these pages remains with Claude. Existing four-language page families retain their reciprocal alternates. Inquiry source material is not copied into the public pages.
