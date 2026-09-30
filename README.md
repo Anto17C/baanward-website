@@ -102,10 +102,21 @@ Use a city-level service page as the durable home for a useful service brief. Ad
 | Rayong | House purchase checks | Property care |
 | Phuket | Villa purchase (Rawai section); construction/handover | Local availability confirmed |
 | Bangkok | Condo purchase checks (new) | Handover/contractor follow-up |
-| Chonburi / Si Racha | None yet | Purchase checks; construction progress |
-| Nonthaburi | None yet | House/condo checks; condition visits |
-| Hua Hin | None yet | Purchase checks; care between stays |
-| Chiang Mai | None yet | Purchase checks; ongoing care |
-| Koh Samui | None yet | Purchase checks; construction/handover |
+| Chonburi / Si Racha | House/condo purchase checks | Purchase checks; construction progress |
+| Nonthaburi | House/condo purchase checks | House/condo checks; condition visits |
+| Hua Hin | House/villa purchase checks | Purchase checks; care between stays |
+| Chiang Mai | House/condo purchase checks | Purchase checks; ongoing care |
+| Koh Samui | Villa purchase checks | Purchase checks; construction/handover |
 
 New URLs: `/bangkok-condo-purchase-support` and `/pattaya-house-villa-purchase-checks`. These are service-fit additions based on existing coverage, not new enquiry counts or proven search demand. Both are linked from the city, Services and Buyer Support pages and included in the sitemap. Pattaya purchase and construction pages distinguish their scopes and link to each other. The new pages are English only; translations remain for Claude and language switches currently lead to existing translated Buyer Support pages. Do not declare untranslated hreflang equivalents. Hua Hin, Chiang Mai, Koh Samui and Phuket remain subject to confirmed local availability. Each city page retains all five main services alongside its focused entry points.
+
+### Five further English purchase pages — 30 September 2026
+
+Added dedicated purchase-check pages for Chonburi/Si Racha, Nonthaburi, Hua Hin, Chiang Mai and Koh Samui, using the existing service scope. These are coverage-based service pages, not claims of new enquiries, measured demand or local offices. Each has its own preparation guidance and purchase scenario, links from its city and the Services/Buyer Support directories, a self-canonical and a sitemap entry. Hua Hin, Chiang Mai and Koh Samui retain explicit local-availability, access and travel conditions. Legal review remains with separately engaged counsel and the quote includes agreed specialist costs. English only; language switches use existing translated Buyer Support pages pending Claude translations.
+
+New URLs:
+- `/chonburi-property-purchase-checks`
+- `/nonthaburi-property-purchase-checks`
+- `/hua-hin-house-villa-purchase-checks`
+- `/chiang-mai-property-purchase-checks`
+- `/koh-samui-villa-purchase-checks`
