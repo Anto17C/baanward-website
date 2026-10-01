@@ -41,11 +41,14 @@ document.addEventListener('keydown', event => {
 });
 mobileNavigation.addEventListener('change', () => setMenu(false));
 
-// Preserve the visitor's chosen city and service through service and language links.
+// Add enquiry context only to contact links; general service navigation stays clean.
 const inquiryContext = new URLSearchParams(location.search);
 const validServices = ['buyer-support','remote-property-oversight','owner-care'];
 const pageService = location.pathname.split('/').pop().replace(/\.html$/, '');
-const selectedService = validServices.includes(pageService) ? pageService : inquiryContext.get('service');
+// Keep existing form values compatible with all translated forms.
+const serviceAliases = {'property-oversight': 'remote-property-oversight', 'property-care': 'owner-care'};
+const currentService = serviceAliases[pageService] || pageService;
+const selectedService = validServices.includes(currentService) ? currentService : inquiryContext.get('service');
 const cityNames = {
   pattaya: 'Pattaya', rayong: 'Rayong', chonburi: 'Chonburi', bangkok: 'Bangkok',
   nonthaburi: 'Nonthaburi', phuket: 'Phuket', 'hua-hin': 'Hua Hin',
@@ -58,11 +61,16 @@ document.querySelectorAll('a[href]').forEach(link => {
   const target = new URL(link.getAttribute('href'), location.href);
   if (target.origin !== location.origin) return;
   const isContact = /\/contact(?:\.html)?$/.test(target.pathname);
-  const isLanguage = Boolean(link.closest('.lang-item'));
-  const isService = validServices.includes(target.pathname.split('/').pop().replace(/\.html$/, ''));
-  if (!isContact && !isLanguage && !isService) return;
-  if (selectedCity && selectedCity.length <= 120) target.searchParams.set('location', selectedCity);
-  if (validServices.includes(selectedService)) target.searchParams.set('service', selectedService);
+  const targetService = target.pathname.split('/').pop().replace(/\.html$/, '');
+  const isService = validServices.includes(targetService) || Boolean(serviceAliases[targetService]);
+  if (isService) {
+    target.searchParams.delete('location');
+    target.searchParams.delete('service');
+    link.setAttribute('href', target.pathname + target.search + target.hash);
+  }
+  if (!isContact) return;
+  if (!target.searchParams.has('location') && selectedCity && selectedCity.length <= 120) target.searchParams.set('location', selectedCity);
+  if (!target.searchParams.has('service') && validServices.includes(selectedService)) target.searchParams.set('service', selectedService);
   if (target.search) link.setAttribute('href', target.pathname + target.search + target.hash);
 });
 const form = document.querySelector('#inquiry-form');
