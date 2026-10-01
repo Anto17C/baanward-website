@@ -120,3 +120,7 @@ New URLs:
 - `/hua-hin-house-villa-purchase-checks`
 - `/chiang-mai-property-purchase-checks`
 - `/koh-samui-villa-purchase-checks`
+
+### Due diligence visibility — 1 October 2026
+
+All ten English purchase pages across the nine locations now explicitly name Purchase Checks & Due Diligence Coordination in their titles and H1s. Each includes a labelled `#due-diligence-scope` section: lawyer-assigned legal review, separately scoped technical inspection, Baanward coordination, attributable findings, missing documents and unresolved questions. Legal/technical examples are adapted for houses, condos or mixed properties. Bundled pricing and separate legal engagement remain intact; existing availability conditions remain. English focused cards and metadata were aligned, URLs/canonicals preserved, and sitemap modification dates updated. Existing translated page families are untouched; Claude should align their wording.
