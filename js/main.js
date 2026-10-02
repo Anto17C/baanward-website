@@ -250,3 +250,33 @@ if (propertyTicker) {
     seen.observe(el);
   });
 })();
+
+// Track WhatsApp/LINE/phone/email CTA clicks to GTM/GA4.
+document.addEventListener('click', (event) => {
+  const link = event.target.closest('a[href]');
+  if (!link) return;
+  const href = link.getAttribute('href');
+  let method = null;
+  if (href.indexOf('wa.me') !== -1 || href.indexOf('api.whatsapp.com') !== -1) method = 'whatsapp';
+  else if (href.indexOf('line.me') !== -1) method = 'line';
+  else if (href.indexOf('tel:') === 0) method = 'phone';
+  else if (href.indexOf('mailto:') === 0) method = 'email';
+  if (!method) return;
+
+  const wrap = link.closest('.contact-channels');
+  let location = 'body';
+  if (wrap) {
+    if (wrap.classList.contains('header-channels')) location = 'header';
+    else if (wrap.classList.contains('closing-channels')) location = 'closing';
+    else if (wrap.classList.contains('footer-channels')) location = 'footer';
+  } else if (link.classList.contains('sticky-whatsapp') || link.classList.contains('sticky-line')) {
+    location = 'sticky';
+  }
+
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: method + '_click',
+    link_location: location,
+    link_url: href,
+  });
+});
