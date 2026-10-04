@@ -2643,3 +2643,16 @@ input,select,textarea { background:#fff; }
 @media(prefers-reduced-motion:reduce) { .local-focus-card { transition:none; } .local-focus-card:hover { transform:none; } }
 
 .local-focus-icon { width:26px; height:26px; flex-shrink:0; }
+
+/* Buyer Support: off-plan and handover sections as numbered panels with tick tiles. */
+.split.tick-panels { gap:24px; align-items:stretch; }
+.tick-panels>div { display:flex; flex-direction:column; padding:34px 34px 30px; border:1px solid var(--line); border-radius:24px; background:#fffdf8; box-shadow:0 22px 44px -34px rgba(28,48,38,.5); }
+.tick-panels .card-number { margin:0 0 16px; }
+.tick-panels h3 { margin:0 0 6px; font-size:1.4rem; line-height:1.25; }
+.tick-panels .check-list { display:grid; grid-template-columns:1fr; gap:10px; margin:18px 0 20px; }
+.tick-panels .check-list li { margin:0; padding:14px 16px 14px 42px; border:0; border-radius:14px; background:#f3f2ea; font-size:.9rem; line-height:1.55; }
+.tick-panels .check-list li::before { left:15px; top:14px; }
+.tick-panels>div>p { margin:0 0 14px; }
+.tick-panels .text-link { margin-top:auto; align-self:flex-start; }
+.tick-panels .text-link+.text-link { margin-top:10px; }
+@media(max-width:900px) { .split.tick-panels { grid-template-columns:1fr; gap:20px; } .tick-panels>div { padding:26px 22px 24px; } }
