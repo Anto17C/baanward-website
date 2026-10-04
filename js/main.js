@@ -163,6 +163,12 @@ if (form) {
       // Require the provider’s documented success flag as well as a successful HTTP response.
       if (!response.ok || result.success !== true) throw new Error('Unconfirmed delivery');
       announce(msg.msgSuccess, 'success');
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'generate_lead',
+        lead_service: String(payload.stage || '').slice(0, 60),
+        lead_location: String(payload.location || '').slice(0, 100),
+      });
       // Preserve any edits made while the earlier submission was in flight.
       if (JSON.stringify(Object.fromEntries(new FormData(form))) === JSON.stringify(payload)) form.reset();
     } catch {
