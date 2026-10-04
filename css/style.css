@@ -2644,15 +2644,26 @@ input,select,textarea { background:#fff; }
 
 .local-focus-icon { width:26px; height:26px; flex-shrink:0; }
 
-/* Buyer Support: off-plan and handover sections as numbered panels with tick tiles. */
-.split.tick-panels { gap:24px; align-items:stretch; }
-.tick-panels>div { display:flex; flex-direction:column; padding:34px 34px 30px; border:1px solid var(--line); border-radius:24px; background:#fffdf8; box-shadow:0 22px 44px -34px rgba(28,48,38,.5); }
-.tick-panels .card-number { margin:0 0 16px; }
-.tick-panels h3 { margin:0 0 6px; font-size:1.4rem; line-height:1.25; }
-.tick-panels .check-list { display:grid; grid-template-columns:1fr; gap:10px; margin:18px 0 20px; }
-.tick-panels .check-list li { margin:0; padding:14px 16px 14px 42px; border:0; border-radius:14px; background:#f3f2ea; font-size:.9rem; line-height:1.55; }
-.tick-panels .check-list li::before { left:15px; top:14px; }
-.tick-panels>div>p { margin:0 0 14px; }
-.tick-panels .text-link { margin-top:auto; align-self:flex-start; }
-.tick-panels .text-link+.text-link { margin-top:10px; }
-@media(max-width:900px) { .split.tick-panels { grid-template-columns:1fr; gap:20px; } .tick-panels>div { padding:26px 22px 24px; } }
+/* Buyer Support: off-plan and handover lists as rows of numbered step cards. */
+.card-group h3 { margin:64px 0 40px; text-align:center; font-size:1.5rem; line-height:1.25; }
+.card-group h3::after { content:''; display:block; width:34px; height:2px; margin:14px auto 0; background:var(--gold-ink); }
+.section-heading+.card-group h3 { margin-top:52px; }
+.card-group .dd-steps { margin:0; }
+.process-steps.cols-3 { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.process-steps.cols-5 { grid-template-columns:repeat(5,minmax(0,1fr)); }
+.process-steps.cols-5>li { padding-left:16px; padding-right:16px; }
+.process-steps.cols-5 p { font-size:.9rem; line-height:1.65; }
+.card-note { max-width:760px; margin:44px auto 0; text-align:center; }
+.card-note p { margin:0; color:var(--muted); }
+.card-links { display:flex; flex-wrap:wrap; justify-content:center; gap:10px 28px; margin-top:26px; }
+@media(max-width:1180px) {
+  .process-steps.cols-5 { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .process-steps.cols-5>li:not(:last-child)::after { content:none; }
+}
+@media(max-width:1000px) {
+  .process-steps.cols-3,.process-steps.cols-5 { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:620px) {
+  .process-steps.cols-3,.process-steps.cols-5 { grid-template-columns:1fr; }
+  .card-group h3 { margin:52px 0 36px; }
+}
