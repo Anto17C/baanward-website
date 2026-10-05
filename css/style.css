@@ -2676,3 +2676,20 @@ input,select,textarea { background:#fff; }
 .local-focus-list li { position:relative; padding-left:16px; color:var(--muted); font-size:.95rem; line-height:1.4; }
 .local-focus-list li::before { content:""; position:absolute; left:0; top:.55em; width:6px; height:6px; border-radius:50%; background:var(--gold-ink); }
 @media(max-width:480px) { .local-focus-list { grid-auto-flow:row; grid-template-rows:none; grid-template-columns:1fr; } }
+
+/* buyer support: jump links and compact location lists */
+.jump-links { background:#fffdf8; border-bottom:1px solid var(--line); }
+.jump-links .container { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:8px 10px; padding-top:14px; padding-bottom:14px; }
+.jump-label { font-size:.75rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--gold-ink); margin-right:6px; }
+.jump-links a { padding:6px 14px; border:1px solid var(--line); border-radius:999px; font-size:.85rem; font-weight:600; color:var(--ink); text-decoration:none; background:#fff; }
+.jump-links a:hover, .jump-links a:focus-visible { border-color:var(--gold-ink); color:var(--forest); }
+.package[id], section[id] { scroll-margin-top:96px; }
+.loc-groups { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.loc-group { padding:28px; border:1px solid var(--line); border-radius:20px; background:#fffdf8; }
+.loc-group h3 { margin:0 0 16px; font-family:Georgia,'Times New Roman',serif; font-size:1.15rem; line-height:1.3; }
+.loc-list { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px; }
+.loc-list li { position:relative; padding-left:16px; font-size:.95rem; line-height:1.4; }
+.loc-list li::before { content:""; position:absolute; left:0; top:.55em; width:6px; height:6px; border-radius:50%; background:var(--gold-ink); }
+.loc-list a { color:var(--ink); font-weight:600; text-decoration:none; border-bottom:1px solid transparent; }
+.loc-list a:hover, .loc-list a:focus-visible { color:var(--forest); border-bottom-color:var(--gold-ink); }
+@media(max-width:900px) { .loc-groups { grid-template-columns:1fr; } }
