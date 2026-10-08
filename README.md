@@ -142,6 +142,9 @@ Reviewed all 33 English HTML pages, including navigation, service listings, purc
 
 Translation handoff: Claude should align FR/DE/TH wording with this English positioning, including menu labels, titles/descriptions, service cards, footer role statement, pricing and the separate-fees FAQ. No translated page content was edited in this pass.
 
+### October 8, 2026 — page titles shortened for Bing "title too long"
+52 titles over 65 characters (12 EN, 15 FR, 18 DE, 7 TH) rewritten to 45–65 characters; all 140 indexable pages now pass, with no duplicate titles and `og:title`/`twitter:title` regenerated to match. Pattern: "[Type] Purchase Checks & Due Diligence in [City] | Baanward" (EN; "Services" and "House & Condo" dropped where they pushed past 65, city names kept; Chonburi EN keeps "& Si Racha", FR/DE/TH use "Chonburi"/ชลบุรี, Pattaya condo drops "& Jomtien" from the title only). Page headings and descriptions are unchanged. Overrides stored per EN title; check 0 differences, lint 0 problems. After deploying: run IndexNow, resubmit the sitemap, then start a new Bing Site Scan (the last scan, 2 Oct, predates the alt-text and title fixes).
+
 ### October 8, 2026 — FAQ on off-plan completion-date reliability
 From the first Performance data (a search for "reliability of phuket off-plan construction timelines"): added "How reliable are off-plan completion dates in Phuket and the rest of Thailand?" to `/off-plan-purchase-checks` and `/phuket-condo-purchase-support` in EN/FR/DE/TH. The answer makes no prediction: completion dates are the developer's target and may be extendable under the contract; we compare dated site progress with the construction and payment schedule, record slowdowns, and pass the record to our lawyer for the contract's extension and delay terms. 2 new translation segments; check 0 differences, lint 0 problems. Deploy, then request indexing for those two pages.
 
