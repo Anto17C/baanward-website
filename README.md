@@ -142,6 +142,9 @@ Reviewed all 33 English HTML pages, including navigation, service listings, purc
 
 Translation handoff: Claude should align FR/DE/TH wording with this English positioning, including menu labels, titles/descriptions, service cards, footer role statement, pricing and the separate-fees FAQ. No translated page content was edited in this pass.
 
+### October 8, 2026 — Bing Site Scan follow-up: alt text on logos and LINE icon
+New Bing scan (8 Oct, 140 pages): 0 errors, 140 warnings, only "Alt attribute for images is missing" (down from 160 warnings; the title-too-long warning is gone). Cause: the only images with `alt=""` were the header logo, footer logo and the LINE icons, present on every page. They now have short alt text ("Baanward logo" / FR "Logo Baanward" / DE "Baanward-Logo" / TH "โลโก้ Baanward", and "LINE"); every `<img>` on every page now has non-empty alt. The links around them keep their own `aria-label`s. check 0 differences, lint 0 problems. Deploy, then start another Bing Site Scan to confirm the warning clears.
+
 ### October 8, 2026 — page titles shortened for Bing "title too long"
 52 titles over 65 characters (12 EN, 15 FR, 18 DE, 7 TH) rewritten to 45–65 characters; all 140 indexable pages now pass, with no duplicate titles and `og:title`/`twitter:title` regenerated to match. Pattern: "[Type] Purchase Checks & Due Diligence in [City] | Baanward" (EN; "Services" and "House & Condo" dropped where they pushed past 65, city names kept; Chonburi EN keeps "& Si Racha", FR/DE/TH use "Chonburi"/ชลบุรี, Pattaya condo drops "& Jomtien" from the title only). Page headings and descriptions are unchanged. Overrides stored per EN title; check 0 differences, lint 0 problems. After deploying: run IndexNow, resubmit the sitemap, then start a new Bing Site Scan (the last scan, 2 Oct, predates the alt-text and title fixes).
 
