@@ -164,10 +164,11 @@ if (form) {
       if (!response.ok || result.success !== true) throw new Error('Unconfirmed delivery');
       announce(msg.msgSuccess, 'success');
       window.dataLayer = window.dataLayer || [];
+      // Analytics receives only an approved category, never what the visitor typed.
       window.dataLayer.push({
         event: 'generate_lead',
-        lead_service: String(payload.stage || '').slice(0, 60),
-        lead_location: String(payload.location || '').slice(0, 100),
+        lead_service: /^[a-z-]{1,40}$/.test(payload.stage || '') ? payload.stage : 'other',
+        lead_location: leadLocationCategory(payload.location),
       });
       // Preserve any edits made while the earlier submission was in flight.
       if (JSON.stringify(Object.fromEntries(new FormData(form))) === JSON.stringify(payload)) form.reset();
@@ -180,6 +181,25 @@ if (form) {
       form.removeAttribute('aria-busy');
     }
   });
+}
+
+// Maps the free-text enquiry location to an approved analytics category (the enquiry keeps the full text).
+const LEAD_LOCATIONS = [
+  ['bangkok', ['bangkok', 'krungthep', 'bkk', 'กรุงเทพ']],
+  ['pattaya', ['pattaya', 'pataya', 'พัทยา']],
+  ['chonburi', ['chonburi', 'ชลบุรี']],
+  ['phuket', ['phuket', 'puket', 'ภูเก็ต']],
+  ['koh-samui', ['samui', 'สมุย']],
+  ['hua-hin', ['huahin', 'หัวหิน']],
+  ['chiang-mai', ['chiangmai', 'เชียงใหม่']],
+  ['rayong', ['rayong', 'ระยอง']],
+  ['nonthaburi', ['nonthaburi', 'nontaburi', 'นนทบุรี']],
+];
+function leadLocationCategory(value) {
+  const text = String(value || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f\s.,'’-]/g, '');
+  if (!text) return 'unknown';
+  const match = LEAD_LOCATIONS.find(([, names]) => names.some(name => text.includes(name)));
+  return match ? match[0] : 'other';
 }
 
 // Which channel floats (WhatsApp or LINE) is set per language in each page's markup.
