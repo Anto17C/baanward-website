@@ -2714,3 +2714,26 @@ a.button[href*="contact"]:hover,
   color:#19251c;
   filter:brightness(1.06);
 }
+
+/* Comparison table (who does what) */
+.table-wrap { margin-top:34px; }
+.compare-table { width:100%; border-collapse:separate; border-spacing:0; background:#fffdf8; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; font-size:.95rem; line-height:1.6; }
+.compare-table caption { caption-side:bottom; padding:14px 4px 0; color:var(--muted); font-size:.85rem; text-align:center; }
+.compare-table th,.compare-table td { padding:16px 18px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); }
+.compare-table thead th { background:var(--forest); color:#fffdf8; font-weight:600; font-size:.9rem; letter-spacing:.02em; }
+.compare-table tbody th { color:var(--forest); font-weight:700; width:20%; }
+.compare-table td { color:var(--muted); }
+.compare-table tbody tr:last-child>* { border-bottom:0; }
+.compare-table tbody tr.is-us>* { background:rgba(155,80,58,.07); }
+.compare-table tbody tr { transition:background-color .2s ease; }
+.compare-table tbody tr:hover>* { background:rgba(53,73,62,.06); }
+.compare-table tbody tr.is-us:hover>* { background:rgba(155,80,58,.11); }
+@media(max-width:800px) {
+  .compare-table,.compare-table tbody,.compare-table tr,.compare-table th,.compare-table td { display:block; }
+  .compare-table thead { position:absolute; left:-9999px; }
+  .compare-table tbody tr { border-bottom:1px solid var(--line); padding:6px 0; }
+  .compare-table tbody tr:last-child { border-bottom:0; }
+  .compare-table th,.compare-table td { border:0; padding:8px 18px; width:auto; }
+  .compare-table tbody th { font-size:1.05rem; padding-top:14px; }
+  .compare-table td::before { content:attr(data-label); display:block; font-size:.74rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--clay); }
+}
