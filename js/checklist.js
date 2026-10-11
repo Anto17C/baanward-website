@@ -11,7 +11,11 @@
 
   function answers() {
     var a = {};
-    [].forEach.call(form.elements, function (el) { if (el.name && el.value) a[el.name] = el.value; });
+    [].forEach.call(form.elements, function (el) {
+      var opt = el.options && el.options[el.selectedIndex];
+      var key = opt && opt.getAttribute('data-key');
+      if (el.name && key) a[el.name] = key;
+    });
     return a;
   }
   function update() {
@@ -33,7 +37,13 @@
   }
   try {
     var saved = JSON.parse(sessionStorage.getItem(KEY) || '{}');
-    Object.keys(saved).forEach(function (n) { if (form.elements[n]) form.elements[n].value = saved[n]; });
+    Object.keys(saved).forEach(function (n) {
+      var el = form.elements[n];
+      if (!el || !el.options) return;
+      for (var i = 0; i < el.options.length; i++) {
+        if (el.options[i].getAttribute('data-key') === saved[n]) el.selectedIndex = i;
+      }
+    });
   } catch (e) {}
   form.addEventListener('change', update);
   form.addEventListener('submit', function (e) { e.preventDefault(); });
