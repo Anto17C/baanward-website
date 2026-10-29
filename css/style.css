@@ -2655,6 +2655,7 @@ input,select,textarea { background:#fff; }
 .process-steps.cols-5 p { font-size:.9rem; line-height:1.65; }
 .card-note { max-width:760px; margin:44px auto 0; text-align:center; }
 .card-note p { margin:0; color:var(--muted); }
+.card-note + .split { margin-top:48px; }
 .card-links { display:flex; flex-wrap:wrap; justify-content:center; gap:10px 28px; margin-top:26px; }
 @media(max-width:1180px) {
   .process-steps.cols-5 { grid-template-columns:repeat(3,minmax(0,1fr)); }
