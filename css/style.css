@@ -2770,3 +2770,4 @@ a.button[href*="contact"]:hover,
   .site-header,.page-hero,.page-hero-media,.site-footer,.closing,.checklist-form,.checklist-bar button,.whatsapp-float,.line-float,#back-to-top,.skip-link { display:none !important; }
   .checklist li { break-inside:avoid; box-shadow:none; transform:none; }
 }
+.lang-note { margin:0; padding:10px 16px; background:#f3efe4; border-bottom:1px solid var(--line); color:var(--forest); font-size:.85rem; line-height:1.5; text-align:center; }
