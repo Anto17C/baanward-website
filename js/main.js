@@ -40,6 +40,24 @@ document.addEventListener('keydown', event => {
   }
 });
 mobileNavigation.addEventListener('change', () => setMenu(false));
+// Phones and tablets: the language switch sits next to the Menu button (as on siamoakmont.com and walailaklaw.com).
+// The same element moves between the bar and the menu, so the markup stays single and the tools keep working.
+const languageItem = document.querySelector('.site-header .lang-item');
+const languageHome = languageItem && document.createComment('language switch');
+if (languageItem && menuButton) {
+  languageItem.before(languageHome);
+  const placeLanguage = () => {
+    setSubmenu(languageItem, false);
+    if (mobileNavigation.matches) menuButton.before(languageItem);
+    else languageHome.after(languageItem);
+  };
+  placeLanguage();
+  mobileNavigation.addEventListener('change', placeLanguage);
+  document.addEventListener('click', event => {
+    if (mobileNavigation.matches && !languageItem.contains(event.target)) setSubmenu(languageItem, false);
+  });
+  menuButton.addEventListener('click', () => setSubmenu(languageItem, false));
+}
 
 // Add enquiry context only to contact links; general service navigation stays clean.
 const inquiryContext = new URLSearchParams(location.search);

@@ -2771,3 +2771,19 @@ a.button[href*="contact"]:hover,
   .checklist li { break-inside:avoid; box-shadow:none; transform:none; }
 }
 .lang-note { margin:0; padding:10px 16px; background:#f3efe4; border-bottom:1px solid var(--line); color:var(--forest); font-size:.85rem; line-height:1.5; text-align:center; }
+
+/* Phones and tablets: language switch and Menu button as two outlined buttons in the header bar,
+   matching siamoakmont.com and walailaklaw.com. main.js moves the language item next to the Menu button. */
+@media(max-width:1100px) {
+  .site-header .header-inner { column-gap:10px; }
+  .site-header .header-inner>.lang-item { position:relative; display:flex; margin-left:auto; align-self:center; }
+  .site-header .header-inner>.lang-item .lang-toggle { min-height:36px; padding:0 10px; gap:5px; border:1px solid #bdc6b5; border-radius:8px; background:transparent; font-size:12px; color:var(--forest); }
+  .site-header .header-inner>.lang-item .lang-toggle svg { width:15px; height:15px; }
+  .site-header .header-inner>.lang-item .lang-toggle .caret { font-size:11px; }
+  .site-header .header-inner>.lang-item>.dropdown { position:absolute; top:calc(100% + 10px); right:0; left:auto; z-index:30; display:none; width:max-content; min-width:190px; margin:0; padding:8px; border:1px solid var(--line); border-radius:8px; background:#fffdf8; box-shadow:0 16px 32px #35493e20; opacity:1; visibility:visible; transform:none; }
+  .site-header .header-inner>.lang-item.submenu-open>.dropdown { display:block; }
+  .site-header .header-inner>.lang-item>.dropdown a { padding:10px 12px; }
+  .site-header .menu-toggle { align-self:center; display:inline-flex; align-items:center; justify-content:center; width:40px; min-height:36px; padding:0; border:1px solid #bdc6b5; border-radius:8px; background:transparent; }
+  .site-header .menu-toggle span { font-size:20px; line-height:1; }
+}
+@media(max-width:400px) { .site-header .header-inner>.lang-item .lang-toggle svg { display:none; } }
