@@ -2787,3 +2787,14 @@ a.button[href*="contact"]:hover,
   .site-header .menu-toggle span { font-size:20px; line-height:1; }
 }
 @media(max-width:400px) { .site-header .header-inner>.lang-item .lang-toggle svg { display:none; } }
+/* Simplified Chinese: system CJK fonts (Inter and Georgia have no Han glyphs) */
+body.lang-zh { font-family:Inter,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC','Noto Sans CJK SC',sans-serif; }
+body.lang-zh h1,body.lang-zh h2,body.lang-zh h3,body.lang-zh h4,
+body.lang-zh .service-card h3,body.lang-zh .package h3,body.lang-zh .steps h3,body.lang-zh .report h3,body.lang-zh .footer-grid h2,
+body.lang-zh.premium-home .hero h1 {
+  font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC','Noto Sans CJK SC',sans-serif;
+  font-weight:500;
+}
+body.lang-zh h1,body.lang-zh h2,body.lang-zh h3,body.lang-zh h4 { line-height:1.3; letter-spacing:0; }
+body.lang-zh .eyebrow { letter-spacing:.06em; }
+body.lang-zh p,body.lang-zh li { line-height:1.75; }
