@@ -1525,7 +1525,7 @@ input,select,textarea { background:#fffdf8; border-radius:9px; }
    for stacked vowel/tone marks (the Latin site's tight negative tracking clips them). */
 body.lang-th { font-family:'Noto Sans Thai',Inter,Arial,sans-serif; }
 body.lang-th h1,body.lang-th h2,body.lang-th h3,body.lang-th h4,
-body.lang-th .wordmark,body.lang-th .service-card h3,body.lang-th .package h3,
+body.lang-th .service-card h3,body.lang-th .package h3,
 body.lang-th .steps h3,body.lang-th .report h3,body.lang-th .footer-grid h2 {
   font-family:'Noto Sans Thai',Inter,Arial,sans-serif;
   font-weight:600;
@@ -1533,7 +1533,8 @@ body.lang-th .steps h3,body.lang-th .report h3,body.lang-th .footer-grid h2 {
 }
 body.lang-th h1,body.lang-th h2,body.lang-th h3,body.lang-th h4 { line-height:1.35; }
 body.lang-th .eyebrow { letter-spacing:.02em; }
-body.lang-th .wordmark { letter-spacing:normal; }
+/* The logo is an image; its hidden sizing text must match the Latin pages so the logo is the same size. */
+body.lang-th .wordmark { font-family:Inter,Arial,sans-serif; }
 
 /* Walailak-inspired hierarchy, adapted to Baanward's warm palette. */
 :root {
@@ -1856,20 +1857,22 @@ input,select,textarea { background:#fff; }
 }
 
 /* Keep the existing logo and menu height; use the space beneath the wordmark. */
+/* Sized in em of the wordmark so it spans exactly the drawn "baanward." lettering (2.1%-97.9% of the logo box). */
 .site-header .brand-tagline {
   position:absolute;
   top:calc(100% - 2px);
-  left:0;
-  width:100%;
-  text-align:center;
+  left:2.125%;
+  width:auto;
+  text-align:left;
   font-family:Inter,sans-serif;
-  font-size:5.5px;
+  font-size:.2157em;
   font-weight:500;
   line-height:1.5;
-  letter-spacing:.08em;
+  letter-spacing:.05em;
   color:var(--ink);
   white-space:nowrap;
 }
+
 
 /* Language dropdown: the label shows the current language, the list offers the other three. */
 .lang-item { justify-self:start; }
