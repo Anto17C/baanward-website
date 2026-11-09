@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="de">
 <head>
+<!-- bw:url-clean: drop unsupported ?location= values before analytics reads the URL -->
+<script>(function(){try{var p=new URLSearchParams(location.search);if(!p.has('location'))return;var c={pattaya:'Pattaya',rayong:'Rayong',chonburi:'Chonburi',bangkok:'Bangkok',nonthaburi:'Nonthaburi',phuket:'Phuket','hua-hin':'Hua Hin','chiang-mai':'Chiang Mai','koh-samui':'Koh Samui'};var all=p.getAll('location'),ok=all.filter(function(v){return Object.prototype.hasOwnProperty.call(c,String(v).trim().toLowerCase().replace(/[\s_]+/g,'-'));});if(ok.length===all.length)return;p.delete('location');if(ok.length)p.set('location',ok[0]);var s=p.toString();history.replaceState(history.state,'',location.pathname+(s?'?'+s:'')+location.hash);}catch(e){}})();</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -17,8 +19,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/apple-touch-icon.png">
-<link rel="stylesheet" href="/css/style.css?v=20261106-tagline">
-<script defer src="/js/main.js?v=20261106-tagline">
+<link rel="stylesheet" href="/css/style.css?v=20261109-qc">
+<script defer src="/js/main.js?v=20261109-qc">
 </script>
 </head>
 <body><!-- Google Tag Manager (noscript) -->

@@ -66,15 +66,26 @@ const pageService = location.pathname.split('/').pop().replace(/\.html$/, '');
 // Keep existing form values compatible with all translated forms.
 const serviceAliases = {'property-oversight': 'remote-property-oversight', 'property-care': 'owner-care'};
 const currentService = serviceAliases[pageService] || pageService;
-const selectedService = validServices.includes(currentService) ? currentService : inquiryContext.get('service');
+const selectedService = validServices.includes(currentService) ? currentService : (validServices.includes(inquiryContext.get('service')) ? inquiryContext.get('service') : null);
 const cityNames = {
   pattaya: 'Pattaya', rayong: 'Rayong', chonburi: 'Chonburi', bangkok: 'Bangkok',
   nonthaburi: 'Nonthaburi', phuket: 'Phuket', 'hua-hin': 'Hua Hin',
   'chiang-mai': 'Chiang Mai', 'koh-samui': 'Koh Samui'
 };
+// Only the supported cities are accepted from the URL ("Koh Samui", "koh-samui" and "KOH SAMUI" all match);
+// anything else is dropped rather than copied into contact links, the form or later analytics hits.
+function supportedCity(value) {
+  const key = String(value || '').trim().toLowerCase().replace(/[\s_]+/g, '-');
+  return Object.prototype.hasOwnProperty.call(cityNames, key) ? cityNames[key] : null;
+}
+const queryCity = supportedCity(inquiryContext.get('location'));
+const queryService = validServices.includes(inquiryContext.get('service')) ? inquiryContext.get('service') : null;
+// Unsupported ?location= values are already removed from the address by the inline bw:url-clean script in each
+// page head, before Google Tag Manager loads. Do not rewrite the URL here: this deferred script runs after GA4,
+// whose history-change tracking would count a late replaceState as a second page view.
 const cityPage = location.pathname.match(/\/locations\/([^/]+?)(?:\.html)?\/?$/);
 // The city currently being viewed takes precedence over an earlier query value.
-const selectedCity = (cityPage && cityNames[cityPage[1]]) || inquiryContext.get('location');
+const selectedCity = (cityPage && cityNames[cityPage[1]]) || queryCity;
 document.querySelectorAll('a[href]').forEach(link => {
   const target = new URL(link.getAttribute('href'), location.href);
   if (target.origin !== location.origin) return;
@@ -87,7 +98,7 @@ document.querySelectorAll('a[href]').forEach(link => {
     link.setAttribute('href', target.pathname + target.search + target.hash);
   }
   if (!isContact) return;
-  if (!target.searchParams.has('location') && selectedCity && selectedCity.length <= 120) target.searchParams.set('location', selectedCity);
+  if (!target.searchParams.has('location') && selectedCity) target.searchParams.set('location', selectedCity);
   if (!target.searchParams.has('service') && validServices.includes(selectedService)) target.searchParams.set('service', selectedService);
   if (target.search) link.setAttribute('href', target.pathname + target.search + target.hash);
 });
@@ -96,11 +107,8 @@ if (form) {
   const button = form.querySelector('button[type="submit"]');
   let sending = false;
   button.disabled = !form.elements.access_key?.value || !form.dataset.endpoint;
-  const queryParams = new URLSearchParams(location.search);
-  const service = queryParams.get('service');
-  if (['buyer-support','remote-property-oversight','owner-care'].includes(service)) form.elements.stage.value = service;
-  const cityParam = queryParams.get('location');
-  if (cityParam && form.elements.location) form.elements.location.value = cityParam;
+  if (queryService) form.elements.stage.value = queryService;
+  if (queryCity && form.elements.location && !form.elements.location.value) form.elements.location.value = queryCity;
   const status = document.querySelector('#form-status');
   const fields = [...form.querySelectorAll('.field input, .field select, .field textarea')];
   function clearError(field) {

@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="th">
 <head>
+<!-- bw:url-clean: drop unsupported ?location= values before analytics reads the URL -->
+<script>(function(){try{var p=new URLSearchParams(location.search);if(!p.has('location'))return;var c={pattaya:'Pattaya',rayong:'Rayong',chonburi:'Chonburi',bangkok:'Bangkok',nonthaburi:'Nonthaburi',phuket:'Phuket','hua-hin':'Hua Hin','chiang-mai':'Chiang Mai','koh-samui':'Koh Samui'};var all=p.getAll('location'),ok=all.filter(function(v){return Object.prototype.hasOwnProperty.call(c,String(v).trim().toLowerCase().replace(/[\s_]+/g,'-'));});if(ok.length===all.length)return;p.delete('location');if(ok.length)p.set('location',ok[0]);var s=p.toString();history.replaceState(history.state,'',location.pathname+(s?'?'+s:'')+location.hash);}catch(e){}})();</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -20,8 +22,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/noto-sans-thai.woff2" as="font" type="font/woff2" crossorigin>
 <!-- /bw:preload -->
-<link rel="stylesheet" href="../css/style.css?v=20261106-tagline">
-<script defer src="../js/main.js?v=20261106-tagline">
+<link rel="stylesheet" href="../css/style.css?v=20261109-qc">
+<script defer src="../js/main.js?v=20261109-qc">
 </script>
 <link rel="canonical" href="https://baanward.com/th/off-plan-purchase-checks">
 <link rel="alternate" hreflang="en" href="https://baanward.com/off-plan-purchase-checks">
