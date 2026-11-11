@@ -2827,8 +2827,8 @@ html { scroll-padding-top:140px; }
   .site-header nav.open .nav-toggle:hover { background:rgba(255,255,255,.1); }
   .site-header nav.open>a[aria-current="page"] { color:#fffdf8; text-decoration-color:#cfa559; }
   .site-header nav.open :focus-visible { outline-color:#fffdf8; }
-  /* Sub-lists: same green as the panel, marked only by a faint white rule on the left. */
-  .site-header nav .nav-item:not(.lang-item) .dropdown { margin:4px 0 8px; padding:6px 0; border:0; border-left:2px solid rgba(255,253,248,.35); border-radius:0; background:transparent; box-shadow:none; color:#fffdf8; }
+  /* Sub-lists: same green as the panel, marked by a gold rule on the left. */
+  .site-header nav .nav-item:not(.lang-item) .dropdown { margin:4px 0 8px; padding:6px 0; border:0; border-left:2px solid #cfa559; border-radius:0; background:transparent; box-shadow:none; color:#fffdf8; }
   .site-header nav .nav-item:not(.lang-item) .dropdown a { padding:10px 16px; border-radius:0; font-size:14px; font-weight:400; line-height:1.6; color:#fffdf8; background:transparent; }
   .site-header nav .nav-item:not(.lang-item) .dropdown a:hover,
   .site-header nav .nav-item:not(.lang-item) .dropdown a:focus-visible { color:#fffdf8; background:rgba(255,255,255,.1); }
