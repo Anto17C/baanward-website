@@ -3,13 +3,6 @@ const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
 const navItems = [...document.querySelectorAll('.nav-item')];
 const mobileNavigation = window.matchMedia('(max-width: 1100px)');
-const siteHeader = document.querySelector('.site-header');
-// Phone header (Siam Oakmont style): see-through over the hero, solid once the page has scrolled.
-if (siteHeader) {
-  const setHeaderState = () => siteHeader.classList.toggle('is-scrolled', window.scrollY > 8);
-  window.addEventListener('scroll', setHeaderState, { passive: true });
-  setHeaderState();
-}
 function setSubmenu(item, open) {
   item.classList.toggle('submenu-open', open);
   item.classList.toggle('submenu-dismissed', !open && !mobileNavigation.matches);
@@ -18,7 +11,6 @@ function setSubmenu(item, open) {
 function setMenu(open) {
   menuButton?.setAttribute('aria-expanded', String(open));
   navigation?.classList.toggle('open', open);
-  siteHeader?.classList.toggle('menu-open', open);
   navItems.forEach(item => setSubmenu(item, false));
 }
 menuButton?.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));

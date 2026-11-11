@@ -2812,27 +2812,12 @@ html { scroll-padding-top:140px; }
   .site-header nav.open { max-height:calc(100vh - 117px); max-height:calc(100dvh - 117px); overflow-y:auto; overscroll-behavior:contain; }
 }
 
-/* Phones: header in the Siam Oakmont manner. The contact strip stays on top; the logo bar is dark and
-   see-through over the hero, turning solid with a shadow once the page scrolls or the menu opens
-   (main.js adds .is-scrolled / .menu-open). Fixed, so each page's first hero gets the header height
-   (36px strip + 76px bar + 1px rule = 113px) added to its top padding. */
-@media(max-width:800px) {
-  .site-header { position:fixed; top:0; left:0; right:0; z-index:40; background:linear-gradient(rgba(46,64,55,.94),rgba(46,64,55,.6)); border-bottom:1px solid rgba(207,165,89,.2); box-shadow:none; color:#fffdf8; transition:background-color .2s,box-shadow .2s; }
-  .site-header.is-scrolled,.site-header.menu-open { background:var(--forest-deep); box-shadow:0 2px 20px rgba(0,0,0,.25); }
-  .site-header .header-inner { min-height:76px; }
-  .site-header .wordmark-image { content:url('../images/brand/baanward-white.svg'); }
-  .site-header .brand-tagline { color:#fffdf8; opacity:.85; }
-  .site-header .header-inner>.lang-item .lang-toggle,
-  .site-header .menu-toggle { border-color:rgba(207,214,226,.35); border-radius:3px; color:#fffdf8; }
-  .site-header .menu-toggle span { color:#fffdf8; }
-  .site-header .header-inner>.lang-item .lang-toggle:hover,.site-header .menu-toggle:hover { background:rgba(255,255,255,.08); }
-  .site-header :focus-visible { outline-color:#fffdf8; }
-  .site-header nav>a:not(.button),.site-header .nav-item>a,.site-header .nav-item .nav-toggle,
-  .site-header nav .dropdown a { color:#fffdf8; }
-  .site-header nav>a[aria-current="page"] { color:#fffdf8; text-decoration-color:#cfa559; }
-  .site-header nav .dropdown { background:transparent; border-color:rgba(255,255,255,.18); }
-  .site-header nav .dropdown a:hover { background:rgba(255,255,255,.08); }
-  .site-header nav .button.small { color:#19251c; }
-  main#main>.page-hero:first-child { padding-top:calc(38px + 113px); }
-  main#main>.hero:first-child { padding-top:113px; }
+/* Phone/tablet menu sub-lists in the Siam Oakmont manner: no box or indent, a 2px rule in the brand green (--forest) on the left,
+   14px links in 43px rows, same colour as the top-level links. (The language list is a separate dropdown.) */
+@media(max-width:1100px) {
+  .site-header nav .nav-item:not(.lang-item) .dropdown { margin:0 0 6px; padding:0 0 10px; border:0; border-left:2px solid var(--forest); border-radius:0; background:transparent; box-shadow:none; color:inherit; }
+  .site-header nav .nav-item:not(.lang-item) .dropdown a { padding:10px 16px; border-radius:0; font-size:14px; font-weight:400; line-height:1.6; color:inherit; background:transparent; }
+  .site-header nav .nav-item:not(.lang-item) .dropdown a:hover,
+  .site-header nav .nav-item:not(.lang-item) .dropdown a:focus-visible { color:var(--clay); background:transparent; }
+  .site-header nav .nav-item:not(.lang-item) .dropdown a[aria-current=page] { color:var(--clay); background:transparent; }
 }
