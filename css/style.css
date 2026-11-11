@@ -2812,17 +2812,20 @@ html { scroll-padding-top:140px; }
   .site-header nav.open { max-height:calc(100vh - 117px); max-height:calc(100dvh - 117px); overflow-y:auto; overscroll-behavior:contain; }
 }
 
-/* Phone/tablet menu sub-lists in the Siam Oakmont manner: no box or indent, a 2px rule in the brand green (--forest) on the left,
-   14px links in 43px rows, same colour as the top-level links. (The language list is a separate dropdown.) */
+/* Phone/tablet menu sub-lists in the Siam Oakmont manner: no indent, 14px links in 43px rows, a brand-green (--forest) panel with white links. (The language list is a separate dropdown.) */
 @media(max-width:1100px) {
-  /* No underline under the current page's title in the collapsed menu (it read as a divider between titles). */
-  .site-header nav>a[aria-current="page"] { text-decoration:none; }
+  /* The open menu drops over the page (as on SO) instead of pushing the hero down: it is taken out of the
+     header's flow and placed under the logo bar, links aligned with the logo, background bleeding to both edges. */
+  .site-header .header-inner { position:relative; }
+  .site-header nav.open { flex-wrap:nowrap; position:absolute; top:calc(100% + 1px); left:0; right:0; z-index:45; background:#faf9f5; box-shadow:0 0 0 100vmax #faf9f5, 0 14px 24px rgba(46,64,55,.14); clip-path:inset(0 -100vmax -40px); max-height:calc(100vh - 117px); max-height:calc(100dvh - 117px); overflow-y:auto; overscroll-behavior:contain; }
   /* Sub-menu arrow sits right after its title, as on SO; the empty last column takes the spare width. */
   .site-header nav .nav-item:not(.lang-item) { grid-template-columns:max-content max-content minmax(0,1fr); }
   .site-header nav .nav-item:not(.lang-item) .nav-toggle { min-width:36px; padding:0 4px; }
-  .site-header nav .nav-item:not(.lang-item) .dropdown { margin:0 0 6px; padding:0 0 10px; border:0; border-left:2px solid var(--forest); border-radius:0; background:transparent; box-shadow:none; color:inherit; }
-  .site-header nav .nav-item:not(.lang-item) .dropdown a { padding:10px 16px; border-radius:0; font-size:14px; font-weight:400; line-height:1.6; color:inherit; background:transparent; }
+  /* Sub-list panel in the brand green with white links (owner, 11 Nov). */
+  .site-header nav .nav-item:not(.lang-item) .dropdown { margin:4px 0 8px; padding:6px 0; border:0; border-left:2px solid var(--forest); border-radius:0; background:var(--forest); box-shadow:none; color:#fffdf8; }
+  .site-header nav .nav-item:not(.lang-item) .dropdown a { padding:10px 16px; border-radius:0; font-size:14px; font-weight:400; line-height:1.6; color:#fffdf8; background:transparent; }
   .site-header nav .nav-item:not(.lang-item) .dropdown a:hover,
-  .site-header nav .nav-item:not(.lang-item) .dropdown a:focus-visible { color:var(--clay); background:transparent; }
-  .site-header nav .nav-item:not(.lang-item) .dropdown a[aria-current=page] { color:var(--clay); background:transparent; }
+  .site-header nav .nav-item:not(.lang-item) .dropdown a:focus-visible { color:#fffdf8; background:rgba(255,255,255,.1); }
+  .site-header nav .nav-item:not(.lang-item) .dropdown a:focus-visible { outline:2px solid #fffdf8; outline-offset:-2px; }
+  .site-header nav .nav-item:not(.lang-item) .dropdown a[aria-current=page] { color:#e8cc8c; background:transparent; }
 }
