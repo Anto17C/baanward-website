@@ -2817,12 +2817,18 @@ html { scroll-padding-top:140px; }
   /* The open menu drops over the page (as on SO) instead of pushing the hero down: it is taken out of the
      header's flow and placed under the logo bar, links aligned with the logo, background bleeding to both edges. */
   .site-header .header-inner { position:relative; }
-  .site-header nav.open { flex-wrap:nowrap; position:absolute; top:calc(100% + 1px); left:0; right:0; z-index:45; background:#faf9f5; box-shadow:0 0 0 100vmax #faf9f5, 0 14px 24px rgba(46,64,55,.14); clip-path:inset(0 -100vmax -40px); max-height:calc(100vh - 117px); max-height:calc(100dvh - 117px); overflow-y:auto; overscroll-behavior:contain; }
+  .site-header nav.open { flex-wrap:nowrap; position:absolute; top:calc(100% + 1px); left:0; right:0; z-index:45; background:var(--forest); box-shadow:0 0 0 100vmax var(--forest), 0 14px 24px rgba(46,64,55,.22); clip-path:inset(0 -100vmax -40px); max-height:calc(100vh - 117px); max-height:calc(100dvh - 117px); overflow-y:auto; overscroll-behavior:contain; }
   /* Sub-menu arrow sits right after its title, as on SO; the empty last column takes the spare width. */
   .site-header nav .nav-item:not(.lang-item) { grid-template-columns:max-content max-content minmax(0,1fr); }
   .site-header nav .nav-item:not(.lang-item) .nav-toggle { min-width:36px; padding:0 4px; }
-  /* Sub-list panel in the brand green with white links (owner, 11 Nov). */
-  .site-header nav .nav-item:not(.lang-item) .dropdown { margin:4px 0 8px; padding:6px 0; border:0; border-left:2px solid var(--forest); border-radius:0; background:var(--forest); box-shadow:none; color:#fffdf8; }
+  /* Open menu panel in the brand green with every title in white (owner, 11 Nov). */
+  .site-header nav.open>a:not(.button),.site-header nav.open .nav-item>a,.site-header nav.open .nav-toggle { color:#fffdf8; }
+  .site-header nav.open>a:not(.button):hover,.site-header nav.open .nav-item>a:hover { color:#fffdf8; text-decoration:underline; text-decoration-color:rgba(255,253,248,.5); text-underline-offset:6px; }
+  .site-header nav.open .nav-toggle:hover { background:rgba(255,255,255,.1); }
+  .site-header nav.open>a[aria-current="page"] { color:#fffdf8; text-decoration-color:#cfa559; }
+  .site-header nav.open :focus-visible { outline-color:#fffdf8; }
+  /* Sub-lists: a slightly darker band inside the green panel. */
+  .site-header nav .nav-item:not(.lang-item) .dropdown { margin:4px 0 8px; padding:6px 0; border:0; border-left:2px solid rgba(255,253,248,.35); border-radius:0; background:rgba(0,0,0,.16); box-shadow:none; color:#fffdf8; }
   .site-header nav .nav-item:not(.lang-item) .dropdown a { padding:10px 16px; border-radius:0; font-size:14px; font-weight:400; line-height:1.6; color:#fffdf8; background:transparent; }
   .site-header nav .nav-item:not(.lang-item) .dropdown a:hover,
   .site-header nav .nav-item:not(.lang-item) .dropdown a:focus-visible { color:#fffdf8; background:rgba(255,255,255,.1); }
