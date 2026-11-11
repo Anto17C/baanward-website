@@ -2837,10 +2837,10 @@ html { scroll-padding-top:140px; }
 }
 
 /* Phones/tablets: a larger logo that uses the free space in the bar, as on siamoakmont.com and walailaklaw.com.
-   Scales with the screen so it stays about 22px clear of the language button (149px wide at 320px, 201px from
-   about 375px, capped there). The tagline is set smaller relative to the logo, with wider tracking, so it still
-   spans exactly the drawn "baanward." lettering without looking oversized (about 8.5px at full size). */
+   Scales with the screen so it stays about 22px clear of the language button (149px wide at 320px, capped at 170px
+   from about 340px; owner chose 170px over 201px). The tagline is set smaller relative to the logo, with wider tracking, so it still
+   spans exactly the drawn "baanward." lettering without looking oversized (about 7.2px at full size). */
 @media(max-width:1100px) {
-  .site-header .wordmark { font-size:clamp(1.8rem, calc((100vw - 164px) / 4.53), 2.9rem); line-height:1; margin-bottom:.26em; }
+  .site-header .wordmark { font-size:clamp(1.8rem, calc((100vw - 164px) / 4.53), 2.4515rem); line-height:1; margin-bottom:.26em; }
   .site-header .brand-tagline { font-size:.183em; letter-spacing:.174em; }
 }
