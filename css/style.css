@@ -2815,6 +2815,8 @@ html { scroll-padding-top:140px; }
 /* Phone/tablet menu sub-lists in the Siam Oakmont manner: no box or indent, a 2px rule in the brand green (--forest) on the left,
    14px links in 43px rows, same colour as the top-level links. (The language list is a separate dropdown.) */
 @media(max-width:1100px) {
+  /* No underline under the current page's title in the collapsed menu (it read as a divider between titles). */
+  .site-header nav>a[aria-current="page"] { text-decoration:none; }
   /* Sub-menu arrow sits right after its title, as on SO; the empty last column takes the spare width. */
   .site-header nav .nav-item:not(.lang-item) { grid-template-columns:max-content max-content minmax(0,1fr); }
   .site-header nav .nav-item:not(.lang-item) .nav-toggle { min-width:36px; padding:0 4px; }
