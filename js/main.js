@@ -59,6 +59,28 @@ if (languageItem && menuButton) {
   menuButton.addEventListener('click', () => setSubmenu(languageItem, false));
 }
 
+// Phones in landscape: the contact button moves from the menu into the header bar, before the language switch.
+// Back in the menu in portrait and on tablets/desktop (tablets in landscape are taller than 600px).
+const landscapePhone = window.matchMedia('(max-width: 1100px) and (orientation: landscape) and (max-height: 600px)');
+const headerCta = navigation?.querySelector('.button.small');
+if (headerCta && menuButton) {
+  const ctaHome = document.createComment('contact button');
+  headerCta.before(ctaHome);
+  const placeCta = () => {
+    const bar = menuButton.parentElement;
+    if (landscapePhone.matches) {
+      bar.insertBefore(headerCta, languageItem && languageItem.parentElement === bar ? languageItem : menuButton);
+      headerCta.classList.add('header-cta');
+    } else {
+      ctaHome.after(headerCta);
+      headerCta.classList.remove('header-cta');
+    }
+  };
+  placeCta();
+  landscapePhone.addEventListener('change', placeCta);
+  mobileNavigation.addEventListener('change', placeCta);
+}
+
 // Add enquiry context only to contact links; general service navigation stays clean.
 const inquiryContext = new URLSearchParams(location.search);
 const validServices = ['buyer-support','remote-property-oversight','owner-care'];
